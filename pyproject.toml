@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "semanticad"
+version = "0.1.0"
+description = "Semantic knowledge layer over CAD models"
+requires-python = ">=3.11"
+dependencies = [
+    "PyQt6>=6.7.0",
+    "anthropic>=0.40.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+# pythonocc-core is best installed via conda-forge on Mac:
+#   conda install -c conda-forge pythonocc-core
+# or via pip (may require pre-built wheel):
+#   pip install pythonocc-core
+dev = [
+    "pytest>=8.0.0",
+    "pytest-qt>=4.4.0",
+]
+
+[project.scripts]
+semanticad = "semanticad.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/semanticad"]
+
+[tool.hatch.build]
+sources = ["src"]
