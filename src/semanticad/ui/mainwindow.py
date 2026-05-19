@@ -19,6 +19,7 @@ from PyQt6.QtWidgets import (
     QScrollArea,
     QSplitter,
     QStatusBar,
+    QTabWidget,
     QTextBrowser,
     QTreeWidget,
     QTreeWidgetItem,
@@ -32,6 +33,7 @@ from semanticad.data.database import init_db
 from semanticad.data import repository as repo
 from semanticad.ui.knowledge_dialog import KnowledgeDialog
 from semanticad.ui.chat_panel import ChatPanel
+from semanticad.ui.architecture_panel import ArchitecturePanel
 
 _CATEGORY_ICONS = {
     "Failure Mode":        "🔴",
@@ -255,11 +257,21 @@ class MainWindow(QMainWindow):
         splitter.setStretchFactor(1, 4)
         splitter.setStretchFactor(2, 2)
 
-        # Chat panel sits below the 3-panel row
+        # Architecture / Platform tab
+        self._arch_panel = ArchitecturePanel()
+
+        tab_widget = QTabWidget()
+        tab_widget.addTab(splitter, "⚙  Anlage")
+        tab_widget.addTab(self._arch_panel, "🏗  Plattform")
+        tab_widget.currentChanged.connect(
+            lambda idx: self._arch_panel.refresh() if idx == 1 else None
+        )
+
+        # Chat panel sits below the tab area
         self._chat_panel = ChatPanel()
 
         v_splitter = QSplitter(Qt.Orientation.Vertical)
-        v_splitter.addWidget(splitter)
+        v_splitter.addWidget(tab_widget)
         v_splitter.addWidget(self._chat_panel)
         v_splitter.setStretchFactor(0, 3)
         v_splitter.setStretchFactor(1, 1)

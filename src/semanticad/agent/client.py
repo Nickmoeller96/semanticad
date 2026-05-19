@@ -43,6 +43,7 @@ _DISPATCH: dict[str, Callable] = {
     ),
     "list_parts_by_type":        lambda i: _tools.list_parts_by_type(i["part_type"]),
     "get_part_relationships":    lambda i: _tools.get_part_relationships(i["semantic_part_id"]),
+    "get_ontology_stats":        lambda _i: _tools.get_ontology_stats(),
 }
 
 

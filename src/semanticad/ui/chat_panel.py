@@ -25,6 +25,7 @@ _TOOL_LABELS = {
     "get_related_knowledge":     "Verwandtes Wissen suchen…",
     "list_parts_by_type":        "Bauteilliste abrufen…",
     "get_part_relationships":    "Bauteil-Verbindungen laden…",
+    "get_ontology_stats":        "Ontology-Statistiken abrufen…",
 }
 
 _DEMO_QUESTIONS = [

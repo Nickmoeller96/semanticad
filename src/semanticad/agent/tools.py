@@ -113,3 +113,22 @@ def list_parts_by_type(part_type: str) -> list[dict]:
             (f"%{part_type}%",),
         ).fetchall()
     return [dict(r) for r in rows]
+
+
+def get_ontology_stats() -> dict:
+    """Overview: counts of parts, knowledge nodes, anchors, relationships, and category breakdown."""
+    with get_connection() as conn:
+        parts       = conn.execute("SELECT COUNT(*) FROM parts").fetchone()[0]
+        knowledge   = conn.execute("SELECT COUNT(*) FROM knowledge_nodes").fetchone()[0]
+        anchors     = conn.execute("SELECT COUNT(*) FROM anchors").fetchone()[0]
+        relations   = conn.execute("SELECT COUNT(*) FROM part_relationships").fetchone()[0]
+        cat_rows    = conn.execute(
+            "SELECT category, COUNT(*) AS cnt FROM knowledge_nodes GROUP BY category ORDER BY cnt DESC"
+        ).fetchall()
+    return {
+        "parts": parts,
+        "knowledge_nodes": knowledge,
+        "anchors": anchors,
+        "relationships": relations,
+        "categories": {r["category"]: r["cnt"] for r in cat_rows},
+    }

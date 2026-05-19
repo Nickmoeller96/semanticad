@@ -134,4 +134,17 @@ TOOL_DEFINITIONS = [
             "required": ["part_type"],
         },
     },
+    {
+        "name": "get_ontology_stats",
+        "description": (
+            "Übersicht über die gesamte Ontology: Anzahl Bauteile, Wissensknoten, Anker, "
+            "Verbindungen und Kategorien-Verteilung. Nützlich für einen ersten Überblick "
+            "über den Wissens-Stand der gesamten Anlage."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": [],
+        },
+    },
 ]
