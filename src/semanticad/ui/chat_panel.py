@@ -24,6 +24,7 @@ _TOOL_LABELS = {
     "find_similar_parts":        "Ähnliche Bauteile suchen…",
     "get_related_knowledge":     "Verwandtes Wissen suchen…",
     "list_parts_by_type":        "Bauteilliste abrufen…",
+    "get_part_relationships":    "Bauteil-Verbindungen laden…",
 }
 
 _DEMO_QUESTIONS = [

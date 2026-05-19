@@ -88,6 +88,23 @@ def get_related_knowledge(knowledge_id: str, limit: int = 5) -> list[dict]:
     return [dict(r) for r in rows]
 
 
+def get_part_relationships(semantic_part_id: str) -> list[dict]:
+    """All relationships for a part (both directions)."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            "SELECT r.relation_type, r.created_at, "
+            "p_from.canonical_name AS from_name, "
+            "p_to.canonical_name   AS to_name "
+            "FROM part_relationships r "
+            "JOIN parts p_from ON r.from_part_id = p_from.semantic_part_id "
+            "JOIN parts p_to   ON r.to_part_id   = p_to.semantic_part_id "
+            "WHERE r.from_part_id = ? OR r.to_part_id = ? "
+            "ORDER BY r.created_at DESC",
+            (semantic_part_id, semantic_part_id),
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
 def list_parts_by_type(part_type: str) -> list[dict]:
     """All parts of a given type (e.g. 'Pump', 'Valve', 'Sensor')."""
     with get_connection() as conn:

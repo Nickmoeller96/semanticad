@@ -112,6 +112,60 @@ def add_knowledge_node(
     return kid
 
 
+def delete_knowledge_node(knowledge_id: str) -> None:
+    """Delete a knowledge node and all its anchors."""
+    with get_connection() as conn:
+        conn.execute("DELETE FROM anchors WHERE knowledge_id = ?", (knowledge_id,))
+        conn.execute("DELETE FROM knowledge_nodes WHERE knowledge_id = ?", (knowledge_id,))
+
+
+def delete_relationship(relation_id: str) -> None:
+    """Delete a part relationship."""
+    with get_connection() as conn:
+        conn.execute("DELETE FROM part_relationships WHERE relation_id = ?", (relation_id,))
+
+
+def add_relationship(from_part_id: str, to_part_id: str, relation_type: str) -> str:
+    """Create a directional relationship between two parts. Returns relation_id."""
+    rid = str(uuid.uuid4())
+    with get_connection() as conn:
+        conn.execute(
+            "INSERT INTO part_relationships (relation_id, from_part_id, to_part_id, relation_type) "
+            "VALUES (?, ?, ?, ?)",
+            (rid, from_part_id, to_part_id, relation_type),
+        )
+    return rid
+
+
+def get_relationships_for_part(semantic_part_id: str) -> list[dict]:
+    """All relationships where this part is from or to. Returns both directions."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            "SELECT r.relation_id, r.relation_type, r.created_at, "
+            "p_from.canonical_name AS from_name, p_from.semantic_part_id AS from_id, "
+            "p_to.canonical_name   AS to_name,   p_to.semantic_part_id   AS to_id "
+            "FROM part_relationships r "
+            "JOIN parts p_from ON r.from_part_id = p_from.semantic_part_id "
+            "JOIN parts p_to   ON r.to_part_id   = p_to.semantic_part_id "
+            "WHERE r.from_part_id = ? OR r.to_part_id = ? "
+            "ORDER BY r.created_at DESC",
+            (semantic_part_id, semantic_part_id),
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def get_connected_part_names(semantic_part_id: str) -> set[str]:
+    """Canonical names of all parts directly connected to the given part."""
+    rels = get_relationships_for_part(semantic_part_id)
+    names = set()
+    for r in rels:
+        if r["from_id"] == semantic_part_id:
+            names.add(r["to_name"])
+        else:
+            names.add(r["from_name"])
+    return names
+
+
 def get_all_anchors(filepath: str) -> list[dict]:
     """All anchors for the current STEP file with part name + knowledge summary."""
     with get_connection() as conn:

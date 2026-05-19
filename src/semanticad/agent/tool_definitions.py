@@ -99,6 +99,24 @@ TOOL_DEFINITIONS = [
         },
     },
     {
+        "name": "get_part_relationships",
+        "description": (
+            "Alle Verbindungen eines Bauteils zu anderen Bauteilen: "
+            "drives, contains, seals, connected_to, monitors. "
+            "Nützlich um Abhängigkeitsketten zu analysieren, z.B. 'Was ist mit der Welle verbunden?'"
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "semantic_part_id": {
+                    "type": "string",
+                    "description": "UUID des Bauteils",
+                }
+            },
+            "required": ["semantic_part_id"],
+        },
+    },
+    {
         "name": "list_parts_by_type",
         "description": (
             "Alle Bauteile eines bestimmten Typs in der Anlage. "

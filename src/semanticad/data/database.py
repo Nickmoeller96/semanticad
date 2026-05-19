@@ -48,9 +48,21 @@ CREATE TABLE IF NOT EXISTS anchors (
     FOREIGN KEY (semantic_part_id) REFERENCES parts(semantic_part_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_anchors_part     ON anchors(semantic_part_id);
-CREATE INDEX IF NOT EXISTS idx_anchors_knowledge ON anchors(knowledge_id);
-CREATE INDEX IF NOT EXISTS idx_mappings_native  ON cad_mappings(cad_system, native_id);
+CREATE TABLE IF NOT EXISTS part_relationships (
+    relation_id   TEXT PRIMARY KEY,
+    from_part_id  TEXT NOT NULL,
+    to_part_id    TEXT NOT NULL,
+    relation_type TEXT NOT NULL DEFAULT 'connected_to',
+    created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (from_part_id) REFERENCES parts(semantic_part_id),
+    FOREIGN KEY (to_part_id)   REFERENCES parts(semantic_part_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_anchors_part        ON anchors(semantic_part_id);
+CREATE INDEX IF NOT EXISTS idx_anchors_knowledge   ON anchors(knowledge_id);
+CREATE INDEX IF NOT EXISTS idx_mappings_native     ON cad_mappings(cad_system, native_id);
+CREATE INDEX IF NOT EXISTS idx_relations_from      ON part_relationships(from_part_id);
+CREATE INDEX IF NOT EXISTS idx_relations_to        ON part_relationships(to_part_id);
 """
 
 

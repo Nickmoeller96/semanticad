@@ -30,18 +30,19 @@ Antworte auf Deutsch, es sei denn der Nutzer schreibt auf Englisch.
 """
 
 _DISPATCH: dict[str, Callable] = {
-    "get_part_info":           lambda i: _tools.get_part_info(i["semantic_part_id"]),
-    "get_knowledge_for_part":  lambda i: _tools.get_knowledge_for_part(i["semantic_part_id"]),
+    "get_part_info":             lambda i: _tools.get_part_info(i["semantic_part_id"]),
+    "get_knowledge_for_part":    lambda i: _tools.get_knowledge_for_part(i["semantic_part_id"]),
     "search_knowledge_semantic": lambda i: _tools.search_knowledge_semantic(
         i["query"], i.get("limit", 5)
     ),
-    "find_similar_parts":      lambda i: _tools.find_similar_parts(
+    "find_similar_parts":        lambda i: _tools.find_similar_parts(
         i["semantic_part_id"], i.get("limit", 5)
     ),
-    "get_related_knowledge":   lambda i: _tools.get_related_knowledge(
+    "get_related_knowledge":     lambda i: _tools.get_related_knowledge(
         i["knowledge_id"], i.get("limit", 5)
     ),
-    "list_parts_by_type":      lambda i: _tools.list_parts_by_type(i["part_type"]),
+    "list_parts_by_type":        lambda i: _tools.list_parts_by_type(i["part_type"]),
+    "get_part_relationships":    lambda i: _tools.get_part_relationships(i["semantic_part_id"]),
 }
 
 

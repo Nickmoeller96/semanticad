@@ -20,6 +20,7 @@ from semanticad.viewer.step_loader import PartEntry, load_step as _load_step
 _GRAY_COLOR      = Quantity_Color(0.62, 0.63, 0.65, Quantity_TOC_RGB)  # all parts default
 _HIGHLIGHT_COLOR = Quantity_Color(0.18, 0.52, 1.00, Quantity_TOC_RGB)  # selected — bright blue
 _ANCHOR_COLOR    = Quantity_Color(0.95, 0.78, 0.05, Quantity_TOC_RGB)  # knowledge anchor — gold
+_CONNECTED_COLOR = Quantity_Color(1.00, 0.55, 0.10, Quantity_TOC_RGB)  # connected parts — orange
 
 
 class OCCViewerWidget(qtViewer3d):
@@ -38,6 +39,7 @@ class OCCViewerWidget(qtViewer3d):
         # {name: (AIS_Shape, base_color)}  — base_color is gray or gold (anchored)
         self._ais_shapes: dict[str, tuple[AIS_Shape, Quantity_Color]] = {}
         self._anchored_names: set[str] = set()
+        self._connected_names: set[str] = set()
         self._selected_name: str | None = None
         self.sig_topods_selected.connect(self._on_selection)
 
@@ -101,16 +103,40 @@ class OCCViewerWidget(qtViewer3d):
         d.Repaint()
         self.update()
 
+    def highlight_connected(self, names: set[str]) -> None:
+        """Color directly connected parts orange. Clears previous connected highlights."""
+        if not self._inited or not self._ais_shapes:
+            return
+        self._connected_names = names
+        d = self._display
+        for name, (ais, base) in self._ais_shapes.items():
+            if name == self._selected_name:
+                color = _HIGHLIGHT_COLOR
+            elif name in names:
+                color = _CONNECTED_COLOR
+            elif name in self._anchored_names:
+                color = _ANCHOR_COLOR
+            else:
+                color = _GRAY_COLOR
+            d.Context.SetColor(ais, color, False)
+            d.Context.Redisplay(ais, False)
+        d.Repaint()
+        self.update()
+
     def select_part(self, name: str) -> None:
         """Highlight one part blue; restore the previous selection to its base color."""
         if not self._inited or not self._ais_shapes:
             return
         d = self._display
 
-        # Restore previous selection
+        # Restore previous selection to its appropriate base color
         if self._selected_name and self._selected_name in self._ais_shapes:
             prev_ais, prev_base = self._ais_shapes[self._selected_name]
-            d.Context.SetColor(prev_ais, prev_base, False)
+            if self._selected_name in self._connected_names:
+                restore_color = _CONNECTED_COLOR
+            else:
+                restore_color = prev_base
+            d.Context.SetColor(prev_ais, restore_color, False)
             d.Context.Redisplay(prev_ais, False)
 
         self._selected_name = name
