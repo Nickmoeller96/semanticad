@@ -1,0 +1,642 @@
+{
+  "source_pdf": "/home/user/semanticad/data/raw/pahala.pdf",
+  "plant_id": "pahala-wwtp",
+  "plant_name": "Pahala WWTP",
+  "pages": [
+    {
+      "page": 1,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 1303,
+      "path_objects": 6552,
+      "text_objects": 241,
+      "image_objects": 0,
+      "max_image_coverage": 0.0,
+      "image_px": null,
+      "effective_image_dpi": null,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 2,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 1002,
+      "path_objects": 5587,
+      "text_objects": 214,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 3,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 270,
+      "text_chars": 5568,
+      "path_objects": 4387,
+      "text_objects": 907,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        849,
+        851
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 4,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 3492,
+      "path_objects": 21743,
+      "text_objects": 495,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 5,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 1881,
+      "path_objects": 20086,
+      "text_objects": 427,
+      "image_objects": 5,
+      "max_image_coverage": 0.044,
+      "image_px": [
+        1417,
+        3697
+      ],
+      "effective_image_dpi": 400.0,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 6,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 4192,
+      "path_objects": 2407,
+      "text_objects": 769,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 7,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 3288,
+      "path_objects": 2631,
+      "text_objects": 565,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 8,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 2071,
+      "path_objects": 2777,
+      "text_objects": 472,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": null,
+      "notes": []
+    },
+    {
+      "page": 9,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 270,
+      "text_chars": 1401,
+      "path_objects": 2900,
+      "text_objects": 476,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        849,
+        851
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 10,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 270,
+      "text_chars": 594,
+      "path_objects": 4700,
+      "text_objects": 125,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        849,
+        851
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 11,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 270,
+      "text_chars": 600,
+      "path_objects": 2999,
+      "text_objects": 125,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        849,
+        851
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 11
+      }
+    },
+    {
+      "page": 12,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 606,
+      "path_objects": 4453,
+      "text_objects": 125,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 13,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 600,
+      "path_objects": 3899,
+      "text_objects": 123,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 11
+      }
+    },
+    {
+      "page": 14,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 622,
+      "path_objects": 5752,
+      "text_objects": 127,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 15,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 595,
+      "path_objects": 2986,
+      "text_objects": 121,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 16,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 597,
+      "path_objects": 2539,
+      "text_objects": 123,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 17,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 610,
+      "path_objects": 3049,
+      "text_objects": 125,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 11
+      }
+    },
+    {
+      "page": 18,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 270,
+      "text_chars": 611,
+      "path_objects": 5528,
+      "text_objects": 127,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        849,
+        851
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 10
+      }
+    },
+    {
+      "page": 19,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 598,
+      "path_objects": 3458,
+      "text_objects": 123,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 20,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 590,
+      "path_objects": 2444,
+      "text_objects": 121,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 11
+      }
+    },
+    {
+      "page": 21,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 950,
+      "path_objects": 2582,
+      "text_objects": 327,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 22,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 988,
+      "path_objects": 2645,
+      "text_objects": 299,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 11
+      }
+    },
+    {
+      "page": 23,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 1015,
+      "path_objects": 2637,
+      "text_objects": 269,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 24,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 1277,
+      "path_objects": 2982,
+      "text_objects": 351,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    },
+    {
+      "page": 25,
+      "width_pt": 2448.0,
+      "height_pt": 1584.0,
+      "pdf_rotation": 0,
+      "text_chars": 1162,
+      "path_objects": 2698,
+      "text_objects": 309,
+      "image_objects": 1,
+      "max_image_coverage": 0.007,
+      "image_px": [
+        851,
+        849
+      ],
+      "effective_image_dpi": 377.1,
+      "page_class": "vector_text",
+      "route": "Vector drawing with a text layer: render from vectors, take exact text and positions from the text layer as hints, then read visually.",
+      "rotation": 0,
+      "notes": [],
+      "rotation_source": "default (unverified)",
+      "rendered": {
+        "width": 5000,
+        "height": 3236,
+        "tiles": 12,
+        "non_blank_tiles": 12
+      }
+    }
+  ],
+  "selected_pages": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ]
+}

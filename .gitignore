@@ -220,3 +220,8 @@ __marimo__/
 # SemantiCAD
 data/semanticad.db
 data/models/
+
+# Plant context demo: source drawings and renders are not redistributed
+data/raw/*.pdf
+work/*/pages/
+work/*/hints/
