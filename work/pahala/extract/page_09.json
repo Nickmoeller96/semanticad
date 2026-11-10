@@ -1,0 +1,997 @@
+{
+ "schema_version": "1.0",
+ "page": 9,
+ "sheet": {
+  "drawing_number": "P-101",
+  "title": "HEADWORKS FACILITY P&ID",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "Sheet 9 of 25. Revision table is blank.",
+   "Horizontal dash-dot lines labelled SCADA and MCP divide the sheet into bands: trapezoid symbols above the SCADA line are SCADA points; circle-in-square bubbles between the SCADA and MCP lines are MCP functions; items below the MCP line are field.",
+   "Arrowheads into SCADA/MCP symbols are drawn either open or filled (apparently discrete vs analog); no legend on this sheet.",
+   "Equipment label blocks along the bottom (SCREENING SLIDE GATE x2, SCREENING WASHER SPRAY WATER VALVES, FINE SCREEN, BAR RACK SLIDE GATE x2, MANUAL BAR RACK) each show only '100' and an empty 'SPEC:'; tag numbers are incomplete.",
+   "Dash-dot outline labelled VENDOR PACKAGE encloses the fine screen, its level instruments and the three spray water solenoid valves.",
+   "No line numbers or pipe sizes are printed on this sheet; service codes RS and 3W appear on the inlet flags only."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CH1",
+   "kind": "other",
+   "name": "Screen channel (open channel with HWWL mark; no tag or label printed)",
+   "confidence": 0.8,
+   "bbox": [
+    0.3,
+    0.555,
+    0.587,
+    0.615
+   ],
+   "notes": "Channel drawn around the fine screen; partly inside the VENDOR PACKAGE outline. Label blocks 'SCREENING SLIDE GATE 100 SPEC:' are printed below its inlet and outlet ends, but no gate symbol is drawn at either end."
+  },
+  {
+   "id": "SCR1",
+   "kind": "screen",
+   "name": "FINE SCREEN",
+   "part_of": "CH1",
+   "confidence": 0.85,
+   "bbox": [
+    0.438,
+    0.555,
+    0.482,
+    0.612
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": "",
+    "package": "VENDOR PACKAGE",
+    "driver": "motor (box 'M', untagged)"
+   },
+   "notes": "Inclined screw screen inside dash-dot outline labelled VENDOR PACKAGE. Label block 'FINE SCREEN 100 SPEC:' has an incomplete number; SCADA labels call it 'SCREEN 2'."
+  },
+  {
+   "id": "BR1",
+   "kind": "screen",
+   "name": "MANUAL BAR RACK",
+   "confidence": 0.85,
+   "bbox": [
+    0.66,
+    0.415,
+    0.757,
+    0.475
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": ""
+   },
+   "notes": "Channel with inclined bar rack and HWWL mark; label block 'MANUAL BAR RACK 100 SPEC:' (number incomplete)."
+  },
+  {
+   "id": "GRT1",
+   "kind": "tank",
+   "name": "GRIT REMOVAL TANK",
+   "confidence": 0.9,
+   "bbox": [
+    0.806,
+    0.505,
+    0.83,
+    0.545
+   ]
+  },
+  {
+   "id": "BAG1",
+   "kind": "bin",
+   "name": "BAG OR CONTAINER",
+   "confidence": 0.9,
+   "bbox": [
+    0.524,
+    0.71,
+    0.571,
+    0.746
+   ]
+  }
+ ],
+ "components": [
+  {
+   "id": "FL1",
+   "kind": "other",
+   "name": "Flume (open-channel flow element symbol, unlabelled)",
+   "confidence": 0.8,
+   "bbox": [
+    0.171,
+    0.585,
+    0.209,
+    0.607
+   ],
+   "notes": "Converging/diverging throat symbol on the RS line under the level-type sensor of FIT 100, 002. Vault named only by SCADA label 'FLOW METER VAULT'."
+  },
+  {
+   "id": "WEIR1",
+   "kind": "other",
+   "name": "OVERFLOW WEIR",
+   "confidence": 0.9,
+   "bbox": [
+    0.594,
+    0.445,
+    0.612,
+    0.463
+   ]
+  },
+  {
+   "id": "SG3",
+   "kind": "other",
+   "name": "BAR RACK SLIDE GATE",
+   "actuator": "manual",
+   "confidence": 0.75,
+   "bbox": [
+    0.652,
+    0.44,
+    0.662,
+    0.47
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": ""
+   },
+   "notes": "Thick bar at inlet end of bar rack channel; matched by position to label block 'BAR RACK SLIDE GATE 100 SPEC:' (number incomplete). No actuator drawn."
+  },
+  {
+   "id": "SG4",
+   "kind": "other",
+   "name": "BAR RACK SLIDE GATE",
+   "actuator": "manual",
+   "confidence": 0.75,
+   "bbox": [
+    0.755,
+    0.44,
+    0.765,
+    0.47
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": ""
+   },
+   "notes": "Thick bar at outlet end of bar rack channel; matched by position to second label block 'BAR RACK SLIDE GATE 100 SPEC:'. No actuator drawn."
+  },
+  {
+   "id": "SV1",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "name": "SCREENING WASHER SPRAY WATER VALVE",
+   "confidence": 0.9,
+   "bbox": [
+    0.345,
+    0.6769999999999999,
+    0.361,
+    0.705
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": ""
+   },
+   "notes": "One of three valves with 'S' actuator; shared label block 'SCREENING WASHER SPRAY WATER VALVES 100 SPEC:' (number incomplete)."
+  },
+  {
+   "id": "SV2",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "name": "SCREENING WASHER SPRAY WATER VALVE",
+   "confidence": 0.9,
+   "bbox": [
+    0.362,
+    0.718,
+    0.378,
+    0.746
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": ""
+   },
+   "notes": "One of three valves with 'S' actuator; shared label block 'SCREENING WASHER SPRAY WATER VALVES 100 SPEC:' (number incomplete)."
+  },
+  {
+   "id": "SV3",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "name": "SCREENING WASHER SPRAY WATER VALVE",
+   "confidence": 0.9,
+   "bbox": [
+    0.382,
+    0.758,
+    0.398,
+    0.786
+   ],
+   "attributes": {
+    "label_number": "100",
+    "spec": ""
+   },
+   "notes": "One of three valves with 'S' actuator; shared label block 'SCREENING WASHER SPRAY WATER VALVES 100 SPEC:' (number incomplete)."
+  }
+ ],
+ "instruments": [
+  {
+   "id": "LCH-001",
+   "tag": "LCH 001",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.066,
+    0.083,
+    0.094,
+    0.117
+   ],
+   "name": "FLOW METER VAULT"
+  },
+  {
+   "id": "LAH-001",
+   "tag": "LAH 001",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.088,
+    0.083,
+    0.116,
+    0.117
+   ],
+   "name": "HIGH INFLUENT FLOW"
+  },
+  {
+   "id": "LCL-001",
+   "tag": "LCL 001",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.11,
+    0.083,
+    0.138,
+    0.117
+   ],
+   "name": "INFLUENT FLOW TOTAL YSTDAY"
+  },
+  {
+   "id": "LAL-001",
+   "tag": "LAL 001",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.132,
+    0.083,
+    0.16,
+    0.117
+   ],
+   "name": "INFLUENT TOTAL TODAY"
+  },
+  {
+   "id": "YA-001",
+   "tag": "YA 001",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.154,
+    0.083,
+    0.182,
+    0.117
+   ],
+   "name": "INFLUENT FLOW TOTAL"
+  },
+  {
+   "id": "LI-001",
+   "tag": "LI 001",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.176,
+    0.083,
+    0.204,
+    0.117
+   ],
+   "name": "INFLUENT FLOW RATE"
+  },
+  {
+   "id": "FI-100.002",
+   "tag": "FI 100.002",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.176,
+    0.196,
+    0.204,
+    0.23
+   ],
+   "notes": "Circle-in-square shared-display bubble in the MCP band (between the SCADA and MCP dash-dot lines).",
+   "attributes": {
+    "band": "MCP"
+   }
+  },
+  {
+   "id": "FIT-100,002",
+   "tag": "FIT 100, 002",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.176,
+    0.493,
+    0.204,
+    0.527
+   ],
+   "measures": {
+    "item": "FL1"
+   },
+   "notes": "Non-contact (ultrasonic-style) sensor above flume; '120 V' supply from 'ES' drawn at the bubble.",
+   "attributes": {
+    "power": "120 V",
+    "power_source": "ES"
+   }
+  },
+  {
+   "id": "LAH-100.125_SCADA",
+   "tag": "LAH 100.125",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.318,
+    0.083,
+    0.346,
+    0.117
+   ],
+   "name": "SCREEN HIGH 2 LEVEL"
+  },
+  {
+   "id": "LDAH-100.124_SCADA",
+   "tag": "LDAH 100.124",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.35,
+    0.083,
+    0.378,
+    0.117
+   ],
+   "name": "SCREEN 2 HIGH LEVEL"
+  },
+  {
+   "id": "LDAH-100.115_SCADA",
+   "tag": "LDAH 100.115",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.377,
+    0.083,
+    0.405,
+    0.117
+   ],
+   "name": "SCREEN 2 FAULT"
+  },
+  {
+   "id": "LAH-100.125_MCP",
+   "tag": "LAH 100.125",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.318,
+    0.196,
+    0.346,
+    0.23
+   ],
+   "attributes": {
+    "band": "MCP"
+   }
+  },
+  {
+   "id": "LDAH-100.124_MCP",
+   "tag": "LDAH 100.124",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.35,
+    0.196,
+    0.378,
+    0.23
+   ],
+   "attributes": {
+    "band": "MCP"
+   }
+  },
+  {
+   "id": "LDAH-100.._MCP",
+   "tag": "LDAH 100..",
+   "location": "dcs",
+   "confidence": 0.7,
+   "bbox": [
+    0.377,
+    0.196,
+    0.405,
+    0.23
+   ],
+   "notes": "Number printed as '100..' (incomplete); feeds SCADA LDAH 100.115 'SCREEN 2 FAULT'. Recorded as drawn.",
+   "attributes": {
+    "band": "MCP"
+   }
+  },
+  {
+   "id": "LI-100,124A",
+   "tag": "LI 100, 124A",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.438,
+    0.083,
+    0.466,
+    0.117
+   ],
+   "name": "SCREEN 2 UP STREAM LEVEL"
+  },
+  {
+   "id": "LI-100,124B",
+   "tag": "LI 100, 124B",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.468,
+    0.083,
+    0.496,
+    0.117
+   ],
+   "name": "SCREEN 2 DOWN STREAM"
+  },
+  {
+   "id": "LDI-100.124",
+   "tag": "LDI 100.124",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.499,
+    0.083,
+    0.527,
+    0.117
+   ],
+   "name": "SCREEN 2 DIFF LEVEL"
+  },
+  {
+   "id": "YI-100_AUTO",
+   "tag": "YI 100,",
+   "location": "scada",
+   "confidence": 0.7,
+   "bbox": [
+    0.529,
+    0.083,
+    0.557,
+    0.117
+   ],
+   "name": "SCREEN 2 IN AUTO",
+   "notes": "Tag number incomplete on drawing (blank after '100,'); recorded as drawn."
+  },
+  {
+   "id": "YI-100_RUN",
+   "tag": "YI 100,",
+   "location": "scada",
+   "confidence": 0.7,
+   "bbox": [
+    0.56,
+    0.083,
+    0.588,
+    0.117
+   ],
+   "name": "SCREEN 2 RUNNING",
+   "notes": "Tag number incomplete on drawing (blank after '100,'); recorded as drawn."
+  },
+  {
+   "id": "YA-007",
+   "tag": "YA 007",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.664,
+    0.083,
+    0.692,
+    0.117
+   ],
+   "name": "PS-2 FAULT"
+  },
+  {
+   "id": "LAH-100_MCP",
+   "tag": "LAH 100,",
+   "location": "dcs",
+   "confidence": 0.7,
+   "bbox": [
+    0.664,
+    0.196,
+    0.692,
+    0.23
+   ],
+   "notes": "Tag number incomplete on drawing (blank after '100,'); recorded as drawn.",
+   "attributes": {
+    "band": "MCP"
+   }
+  },
+  {
+   "id": "LSH-100_BR",
+   "tag": "LSH 100,",
+   "location": "field",
+   "confidence": 0.7,
+   "bbox": [
+    0.664,
+    0.368,
+    0.692,
+    0.402
+   ],
+   "measures": {
+    "item": "BR1"
+   },
+   "notes": "Tag number incomplete on drawing (blank after '100,'); recorded as drawn. Float switch in manual bar rack channel."
+  },
+  {
+   "id": "VCP-100",
+   "tag": "VCP 100,",
+   "location": "local_panel",
+   "confidence": 0.7,
+   "bbox": [
+    0.333,
+    0.415,
+    0.5,
+    0.465
+   ],
+   "name": "VCP (control panel box above VENDOR PACKAGE)",
+   "notes": "Tag number incomplete on drawing (blank after '100,'); recorded as drawn. Drawn as a panel rectangle, not a bubble; all vendor-package signals terminate on it."
+  },
+  {
+   "id": "LSH-100,115",
+   "tag": "LSH 100, 115",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.328,
+    0.513,
+    0.356,
+    0.547
+   ],
+   "measures": {
+    "item": "CH1"
+   },
+   "notes": "Float switch in screen channel upstream of screen."
+  },
+  {
+   "id": "LIT-100,114A",
+   "tag": "LIT 100, 114A",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.396,
+    0.498,
+    0.424,
+    0.532
+   ],
+   "measures": {
+    "item": "CH1"
+   },
+   "notes": "Ultrasonic-style level sensor upstream of fine screen."
+  },
+  {
+   "id": "LIT-100,114B",
+   "tag": "LIT 100, 114B",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.479,
+    0.493,
+    0.507,
+    0.527
+   ],
+   "measures": {
+    "item": "CH1"
+   },
+   "notes": "Ultrasonic-style level sensor downstream of fine screen."
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "RS",
+   "from": "B1",
+   "to": "CH1",
+   "path": [
+    "FL1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L3",
+   "from": "CH1",
+   "to": "BR1",
+   "path": [
+    "WEIR1",
+    "SG3"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "notes": "Riser from screen channel (near its downstream end) up to a junction, then right over the OVERFLOW WEIR into the manual bar rack channel."
+  },
+  {
+   "id": "L2",
+   "from": {
+    "line": "L1",
+    "after": "FL1"
+   },
+   "to": {
+    "line": "L3"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Bypass leaving the RS line just upstream of the screen channel, running over the VCP box and down into the junction upstream of the overflow weir."
+  },
+  {
+   "id": "L4",
+   "from": "BR1",
+   "to": "GRT1",
+   "path": [
+    "SG4"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85
+  },
+  {
+   "id": "L5",
+   "from": "CH1",
+   "to": {
+    "line": "L4",
+    "after": "SG4"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Screen channel outlet; joins bar rack outlet at junction upstream of grit removal tank."
+  },
+  {
+   "id": "L6",
+   "from": "GRT1",
+   "to": "OPC1",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L7",
+   "from": "SCR1",
+   "to": "BAG1",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Screenings discharge from top of fine screen."
+  },
+  {
+   "id": "L8",
+   "service": "3W",
+   "from": "B2",
+   "to": "B3",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L9",
+   "service": "3W",
+   "from": {
+    "line": "L8"
+   },
+   "to": "SCR1",
+   "path": [
+    "SV3"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Spray water branch into vendor package; lowest of three spray valves."
+  },
+  {
+   "id": "L10",
+   "service": "3W",
+   "from": {
+    "line": "L9"
+   },
+   "to": "SCR1",
+   "path": [
+    "SV1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Riser off L9 upstream of SV3 to the top spray valve."
+  },
+  {
+   "id": "L11",
+   "service": "3W",
+   "from": {
+    "line": "L10"
+   },
+   "to": "SCR1",
+   "path": [
+    "SV2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Branch off riser upstream of SV1 to the middle spray valve."
+  }
+ ],
+ "signals": [
+  {
+   "from": "FIT-100,002",
+   "to": "FI-100.002",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9
+  },
+  {
+   "from": "FI-100.002",
+   "to": "LCH-001",
+   "type": "software",
+   "purpose": "unknown",
+   "confidence": 0.85,
+   "notes": "Common data-link bus (line with small circles) from FI 100.002."
+  },
+  {
+   "from": "FI-100.002",
+   "to": "LAH-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Common data-link bus (line with small circles) from FI 100.002."
+  },
+  {
+   "from": "FI-100.002",
+   "to": "LCL-001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Common data-link bus (line with small circles) from FI 100.002."
+  },
+  {
+   "from": "FI-100.002",
+   "to": "LAL-001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Common data-link bus (line with small circles) from FI 100.002."
+  },
+  {
+   "from": "FI-100.002",
+   "to": "YA-001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Common data-link bus (line with small circles) from FI 100.002."
+  },
+  {
+   "from": "FI-100.002",
+   "to": "LI-001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Common data-link bus (line with small circles) from FI 100.002."
+  },
+  {
+   "from": "LSH-100,115",
+   "to": "VCP-100",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LIT-100,114A",
+   "to": "VCP-100",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "LIT-100,114B",
+   "to": "VCP-100",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "VCP-100",
+   "to": "SV1",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85
+  },
+  {
+   "from": "VCP-100",
+   "to": "SV2",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85
+  },
+  {
+   "from": "VCP-100",
+   "to": "SV3",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85
+  },
+  {
+   "from": "VCP-100",
+   "to": "SCR1",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed line from VCP to motor box 'M' on the fine screen."
+  },
+  {
+   "from": "VCP-100",
+   "to": "LAH-100.125_MCP",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "One dashed line leaves the VCP top and fans out to the three MCP bubbles."
+  },
+  {
+   "from": "VCP-100",
+   "to": "LDAH-100.124_MCP",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "One dashed line leaves the VCP top and fans out to the three MCP bubbles."
+  },
+  {
+   "from": "VCP-100",
+   "to": "LDAH-100.._MCP",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "One dashed line leaves the VCP top and fans out to the three MCP bubbles."
+  },
+  {
+   "from": "LAH-100.125_MCP",
+   "to": "LAH-100.125_SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LDAH-100.124_MCP",
+   "to": "LDAH-100.124_SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LDAH-100.._MCP",
+   "to": "LDAH-100.115_SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "VCP-100",
+   "to": "LI-100,124A",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Data link (line with small circles) from VCP top to a common SCADA bus."
+  },
+  {
+   "from": "VCP-100",
+   "to": "LI-100,124B",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Data link (line with small circles) from VCP top to a common SCADA bus."
+  },
+  {
+   "from": "VCP-100",
+   "to": "LDI-100.124",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Data link (line with small circles) from VCP top to a common SCADA bus."
+  },
+  {
+   "from": "VCP-100",
+   "to": "YI-100_AUTO",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Data link (line with small circles) from VCP top to a common SCADA bus."
+  },
+  {
+   "from": "VCP-100",
+   "to": "YI-100_RUN",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Data link (line with small circles) from VCP top to a common SCADA bus."
+  },
+  {
+   "from": "LSH-100_BR",
+   "to": "LAH-100_MCP",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LAH-100_MCP",
+   "to": "YA-007",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "out",
+   "name": "TO MBR",
+   "other_drawing": null,
+   "confidence": 0.7,
+   "bbox": [
+    0.853,
+    0.51,
+    0.887,
+    0.524
+   ],
+   "notes": "Flag carries no drawing number; MBR is drawn on other sheets of this set, so kept as an off-page connector rather than a boundary."
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "RS FROM PAHALA",
+   "direction": "source",
+   "bbox": [
+    0.069,
+    0.588,
+    0.103,
+    0.602
+   ]
+  },
+  {
+   "id": "B2",
+   "name": "3W UTILITY WATER",
+   "direction": "source",
+   "bbox": [
+    0.06,
+    0.855,
+    0.094,
+    0.868
+   ],
+   "notes": "Flag has no drawing number."
+  },
+  {
+   "id": "B3",
+   "name": "OTHER USES",
+   "direction": "sink",
+   "bbox": [
+    0.843,
+    0.855,
+    0.886,
+    0.868
+   ],
+   "notes": "3W utility water continuing to other uses; flag has no drawing number."
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Incomplete tag numbers (blank suffix, drawn as '100,'): YI 100, (SCREEN 2 IN AUTO); YI 100, (SCREEN 2 RUNNING); LAH 100, (MCP, PS-2 fault path); LSH 100, (bar rack channel); VCP 100,",
+  "MCP bubble LDAH '100..' - number incomplete as printed",
+  "Bottom label blocks show only '100' with blank SPEC: for both SCREENING SLIDE GATEs, SCREENING WASHER SPRAY WATER VALVES, FINE SCREEN, both BAR RACK SLIDE GATEs and MANUAL BAR RACK",
+  "SCREENING SLIDE GATE (two label blocks, below the inlet and outlet ends of the screen channel): no gate symbol is drawn on the channel, so not recorded as components",
+  "Label text over SCADA symbols overlaps at top-left (e.g. 'INFLUENT' strings collide); descriptions assigned by column position"
+ ]
+}

@@ -1,0 +1,631 @@
+{
+ "schema_version": "1.0",
+ "page": 22,
+ "sheet": {
+  "drawing_number": "P-501",
+  "title": "SUBSURFACE DRIP EFFLUENT DISPOSAL P&ID",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "Band above the upper dash-dot line is labelled SCADA; the band between the two dash-dot lines is unlabelled; field items are below.",
+   "Instrument, control and status signals are drawn only for the Drip Zone 1 valve (loop 500, 101); the Zone 2-4 valves show only ZSO/ZSC bubbles and 120 V ES power.",
+   "Sheet 22 of 25. Revision table is empty. No line numbers, sizes or valve tags are printed on this sheet."
+  ]
+ },
+ "equipment": [],
+ "components": [
+  {
+   "id": "MOV1",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "confidence": 0.85,
+   "bbox": [
+    0.36,
+    0.507,
+    0.376,
+    0.547
+   ],
+   "name": "Drip zone 1 valve (untagged)",
+   "notes": "Two-bar/slash/dot (butterfly-style) valve symbol with boxed 'M' actuator; untagged. Actuator fed by '120 V' from 'ES'.",
+   "attributes": {
+    "power": "120 V",
+    "power_source": "ES",
+    "symbol": "butterfly"
+   }
+  },
+  {
+   "id": "MOV2",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "confidence": 0.85,
+   "bbox": [
+    0.415,
+    0.598,
+    0.431,
+    0.638
+   ],
+   "name": "Drip zone 2 valve (untagged)",
+   "notes": "Two-bar/slash/dot (butterfly-style) valve symbol with boxed 'M' actuator; untagged. Actuator fed by '120 V' from 'ES'.",
+   "attributes": {
+    "power": "120 V",
+    "power_source": "ES",
+    "symbol": "butterfly"
+   }
+  },
+  {
+   "id": "MOV3",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "confidence": 0.85,
+   "bbox": [
+    0.473,
+    0.691,
+    0.489,
+    0.731
+   ],
+   "name": "Drip zone 3 valve (untagged)",
+   "notes": "Two-bar/slash/dot (butterfly-style) valve symbol with boxed 'M' actuator; untagged. Actuator fed by '120 V' from 'ES'. As drawn, the header branch ends at the valve body and the outgoing line to the drip zone leaves from the 'M' actuator box level (drafting offset).",
+   "attributes": {
+    "power": "120 V",
+    "power_source": "ES",
+    "symbol": "butterfly"
+   }
+  },
+  {
+   "id": "MOV4",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "confidence": 0.85,
+   "bbox": [
+    0.547,
+    0.782,
+    0.563,
+    0.822
+   ],
+   "name": "Drip zone 4 valve (untagged)",
+   "notes": "Two-bar/slash/dot (butterfly-style) valve symbol with boxed 'M' actuator; untagged. Actuator fed by '120 V' from 'ES'. As drawn, the header branch ends at the valve body and the outgoing line to the drip zone leaves from the 'M' actuator box level (drafting offset).",
+   "attributes": {
+    "power": "120 V",
+    "power_source": "ES",
+    "symbol": "butterfly"
+   }
+  }
+ ],
+ "instruments": [
+  {
+   "id": "ZIO-500,101-S",
+   "tag": "ZIO 500, 101",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.226,
+    0.085,
+    0.25,
+    0.119
+   ],
+   "name": "VALVE OPENED",
+   "notes": "Hexagon-style bubble above the SCADA dash-dot line."
+  },
+  {
+   "id": "ZIC-500,101-S",
+   "tag": "ZIC 500, 101",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.25,
+    0.085,
+    0.274,
+    0.119
+   ],
+   "name": "VALVE CLOSED",
+   "notes": "Hexagon-style bubble above the SCADA dash-dot line."
+  },
+  {
+   "id": "YA-500,101-S",
+   "tag": "YA 500, 101",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.273,
+    0.085,
+    0.297,
+    0.119
+   ],
+   "name": "VALVE FAULT",
+   "notes": "Hexagon-style bubble above the SCADA dash-dot line."
+  },
+  {
+   "id": "YI-500,101-S1",
+   "tag": "YI 500, 101",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.356,
+    0.085,
+    0.38,
+    0.119
+   ],
+   "name": "VALVE IN AUTO",
+   "notes": "Hexagon-style bubble above the SCADA dash-dot line."
+  },
+  {
+   "id": "YI-500,101-S2",
+   "tag": "YI 500, 101",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.385,
+    0.085,
+    0.409,
+    0.119
+   ],
+   "name": "VALVE OPEN SETPOINT",
+   "notes": "Hexagon-style bubble above the SCADA dash-dot line. Same printed tag as the VALVE IN AUTO and VALVE CLOSE SETPOINT bubbles."
+  },
+  {
+   "id": "YI-500,101-S3",
+   "tag": "YI 500, 101",
+   "location": "scada",
+   "confidence": 0.9,
+   "bbox": [
+    0.415,
+    0.085,
+    0.439,
+    0.119
+   ],
+   "name": "VALVE CLOSE SETPOINT",
+   "notes": "Hexagon-style bubble above the SCADA dash-dot line. Same printed tag as the VALVE IN AUTO and VALVE OPEN SETPOINT bubbles."
+  },
+  {
+   "id": "ZIO-500,101",
+   "tag": "ZIO 500, 101",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.226,
+    0.197,
+    0.25,
+    0.231
+   ],
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the two dash-dot lines (below SCADA)."
+  },
+  {
+   "id": "ZIC-500,101",
+   "tag": "ZIC 500, 101",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.25,
+    0.197,
+    0.274,
+    0.231
+   ],
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the two dash-dot lines (below SCADA)."
+  },
+  {
+   "id": "YA-500,101",
+   "tag": "YA 500, 101",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.273,
+    0.197,
+    0.297,
+    0.231
+   ],
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the two dash-dot lines (below SCADA)."
+  },
+  {
+   "id": "YI-500,101",
+   "tag": "YI 500, 101",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.356,
+    0.197,
+    0.38,
+    0.231
+   ],
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the two dash-dot lines (below SCADA)."
+  },
+  {
+   "id": "ZCO-500,101",
+   "tag": "ZCO 500, 101",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.385,
+    0.197,
+    0.409,
+    0.231
+   ],
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the two dash-dot lines (below SCADA)."
+  },
+  {
+   "id": "ZCC-500,101",
+   "tag": "ZCC 500, 101",
+   "location": "dcs",
+   "confidence": 0.9,
+   "bbox": [
+    0.415,
+    0.197,
+    0.439,
+    0.231
+   ],
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the two dash-dot lines (below SCADA)."
+  },
+  {
+   "id": "HS-500,101",
+   "tag": "HS 500, 101",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.356,
+    0.362,
+    0.38,
+    0.396
+   ],
+   "name": "OAC",
+   "notes": "Hand switch annotated 'OAC'; plain circle with horizontal line through the bubble as drawn for all bubbles on this sheet."
+  },
+  {
+   "id": "ZSO-500,101",
+   "tag": "ZSO 500, 101",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.317,
+    0.503,
+    0.341,
+    0.537
+   ],
+   "measures": {
+    "item": "MOV1"
+   }
+  },
+  {
+   "id": "ZSC-500,101",
+   "tag": "ZSC 500, 101",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.334,
+    0.503,
+    0.358,
+    0.537
+   ],
+   "measures": {
+    "item": "MOV1"
+   }
+  },
+  {
+   "id": "ZSO-500,201",
+   "tag": "ZSO 500, 201",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.371,
+    0.594,
+    0.395,
+    0.628
+   ],
+   "measures": {
+    "item": "MOV2"
+   }
+  },
+  {
+   "id": "ZSC-500,201",
+   "tag": "ZSC 500, 201",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.389,
+    0.594,
+    0.413,
+    0.628
+   ],
+   "measures": {
+    "item": "MOV2"
+   }
+  },
+  {
+   "id": "ZSO-500,301",
+   "tag": "ZSO 500, 301",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.43,
+    0.685,
+    0.454,
+    0.719
+   ],
+   "measures": {
+    "item": "MOV3"
+   }
+  },
+  {
+   "id": "ZSC-500,301",
+   "tag": "ZSC 500, 301",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.447,
+    0.685,
+    0.471,
+    0.719
+   ],
+   "measures": {
+    "item": "MOV3"
+   }
+  },
+  {
+   "id": "ZSO-500,201-Z4",
+   "tag": "ZSO 500, 201",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.503,
+    0.776,
+    0.527,
+    0.81
+   ],
+   "measures": {
+    "item": "MOV4"
+   },
+   "notes": "Printed number is '500, 201', the same as the Drip Zone 2 valve switches; recorded as drawn."
+  },
+  {
+   "id": "ZSC-500,201-Z4",
+   "tag": "ZSC 500, 201",
+   "location": "field",
+   "confidence": 0.9,
+   "bbox": [
+    0.521,
+    0.776,
+    0.545,
+    0.81
+   ],
+   "measures": {
+    "item": "MOV4"
+   },
+   "notes": "Printed number is '500, 201', the same as the Drip Zone 2 valve switches; recorded as drawn."
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC1",
+   "to": "B4",
+   "path": [
+    "MOV4"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "notes": "Supply from irrigation equalization tank into the vertical header, continuing as the lowest branch through the Zone 4 valve to DRIP ZONE 4. No line number or size printed. Outgoing segment is drawn from the actuator box level (drafting offset)."
+  },
+  {
+   "id": "L2",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B1",
+   "path": [
+    "MOV1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Header branch (top of vertical header) to DRIP ZONE 1."
+  },
+  {
+   "id": "L3",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B2",
+   "path": [
+    "MOV2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Header branch to DRIP ZONE 2."
+  },
+  {
+   "id": "L4",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B3",
+   "path": [
+    "MOV3"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "notes": "Header branch to DRIP ZONE 3. Outgoing segment is drawn from the actuator box level (drafting offset)."
+  }
+ ],
+ "signals": [
+  {
+   "from": "ZSO-500,101",
+   "to": "ZIO-500,101",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.8,
+   "notes": "Dashed line from the ZSO/ZSC bubble pair; ZIO and ZIC drops join one common dashed run to the pair, so the ZSO->ZIO / ZSC->ZIC pairing is by function letters."
+  },
+  {
+   "from": "ZSC-500,101",
+   "to": "ZIC-500,101",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.8,
+   "notes": "Dashed line from the ZSO/ZSC bubble pair; pairing by function letters (common dashed run)."
+  },
+  {
+   "from": "MOV1",
+   "to": "YA-500,101",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Dashed line from the 'M' actuator of the Zone 1 valve to YA (valve fault)."
+  },
+  {
+   "from": "ZIO-500,101",
+   "to": "ZIO-500,101-S",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.9
+  },
+  {
+   "from": "ZIC-500,101",
+   "to": "ZIC-500,101-S",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.9
+  },
+  {
+   "from": "YA-500,101",
+   "to": "YA-500,101-S",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.9
+  },
+  {
+   "from": "HS-500,101",
+   "to": "YI-500,101",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "HS (OAC) in-auto status up to YI."
+  },
+  {
+   "from": "YI-500,101",
+   "to": "YI-500,101-S1",
+   "type": "software",
+   "purpose": "status",
+   "confidence": 0.9
+  },
+  {
+   "from": "HS-500,101",
+   "to": "MOV1",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed line from HS down to the 'M' actuator of the Zone 1 valve."
+  },
+  {
+   "from": "ZCO-500,101",
+   "to": "HS-500,101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8,
+   "notes": "Open command; dashed line from ZCO joins the ZCC dashed line and runs to the right side of HS."
+  },
+  {
+   "from": "ZCC-500,101",
+   "to": "HS-500,101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8,
+   "notes": "Close command; dashed line to the right side of HS. Arrowhead under ZCC is drawn pointing up into the bubble, unlike ZCO."
+  },
+  {
+   "from": "ZCO-500,101",
+   "to": "YI-500,101-S2",
+   "type": "software",
+   "purpose": "unknown",
+   "confidence": 0.8,
+   "notes": "Data link (line with small circles) between ZCO and the SCADA 'VALVE OPEN SETPOINT' bubble; open arrowhead drawn at the SCADA bubble."
+  },
+  {
+   "from": "ZCC-500,101",
+   "to": "YI-500,101-S3",
+   "type": "software",
+   "purpose": "unknown",
+   "confidence": 0.8,
+   "notes": "Data link (line with small circles) between ZCC and the SCADA 'VALVE CLOSE SETPOINT' bubble; open arrowhead drawn at the SCADA bubble."
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "IRRIGATION EQUALIZATION TANK",
+   "other_drawing": null,
+   "other_item": "IRRIGATION EQUALIZATION TANK",
+   "confidence": 0.7,
+   "bbox": [
+    0.132,
+    0.665,
+    0.185,
+    0.7
+   ],
+   "notes": "Incoming flag carries no drawing number; kept as an off-page connector because the irrigation equalization tank is plant equipment expected on another sheet of this set."
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "DRIP ZONE 1",
+   "direction": "sink",
+   "bbox": [
+    0.612,
+    0.528,
+    0.682,
+    0.542
+   ],
+   "notes": "Outgoing flag with no drawing number."
+  },
+  {
+   "id": "B2",
+   "name": "DRIP ZONE 2",
+   "direction": "sink",
+   "bbox": [
+    0.612,
+    0.619,
+    0.682,
+    0.633
+   ],
+   "notes": "Outgoing flag with no drawing number."
+  },
+  {
+   "id": "B3",
+   "name": "DRIP ZONE 3",
+   "direction": "sink",
+   "bbox": [
+    0.612,
+    0.695,
+    0.682,
+    0.709
+   ],
+   "notes": "Outgoing flag with no drawing number."
+  },
+  {
+   "id": "B4",
+   "name": "DRIP ZONE 4",
+   "direction": "sink",
+   "bbox": [
+    0.612,
+    0.786,
+    0.682,
+    0.8
+   ],
+   "notes": "Outgoing flag with no drawing number."
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": []
+}

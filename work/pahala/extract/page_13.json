@@ -1,0 +1,1038 @@
+{
+ "schema_version": "1.0",
+ "page": 13,
+ "sheet": {
+  "drawing_number": "P-204",
+  "title": "P&IDS PERMEATE COLLECTION",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "Horizontal bands: SCADA HMI / MBR PLC / MCC. Bubble position gives its location.",
+   "Diamond-in-square symbols marked DI, DO, AI, AO are untagged MBR PLC I/O points; they are not recorded as instruments, each is noted on the signal that passes through it.",
+   "'VENT TO ATMOSPHERE (TYP)' is printed at XV-080111 only; the identical branch at XV-080112 carries no label.",
+   "A boxed '4' is drawn inside pump PMP-080101; no note list is on this sheet.",
+   "Flag 'a PERMEATE TO DISINFECTION' carries no 'REF SHT' drawing reference.",
+   "Sheet 13 of 25. CAD filename P-200 P&IDS.DWG. No revisions entered in revision table. No line numbers or pipe sizes are printed."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "PMP-080101",
+   "tag": "PMP-080101",
+   "kind": "centrifugal_pump",
+   "name": "Permeate pump (no descriptive name printed)",
+   "bbox": [
+    0.436,
+    0.481,
+    0.452,
+    0.523
+   ],
+   "confidence": 0.95,
+   "attributes": {
+    "symbol_note_ref": "4"
+   },
+   "notes": "Only the tag PMP-080101 is printed. A boxed '4' is drawn inside the pump casing; its meaning is not given on this sheet."
+  }
+ ],
+ "components": [
+  {
+   "id": "XV-080111",
+   "tag": "XV-080111",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "bbox": [
+    0.179,
+    0.389,
+    0.212,
+    0.432
+   ],
+   "confidence": 0.9,
+   "notes": "Valve body drawn as bow-tie with a circle in the middle (ball-type) on the vertical vent branch; box marked S joined by a solid line to field bubble XV 080111. 'VENT TO ATMOSPHERE (TYP)' printed above."
+  },
+  {
+   "id": "XV-080112",
+   "tag": "XV-080112",
+   "kind": "solenoid_valve",
+   "actuator": "solenoid",
+   "bbox": [
+    0.549,
+    0.389,
+    0.586,
+    0.432
+   ],
+   "confidence": 0.95,
+   "notes": "Same symbol as XV-080111 on a vertical branch off the main line; tag printed both in field bubble XV 080112 and as text XV-080112 beside the valve. No destination label (the VENT TO ATMOSPHERE note at XV-080111 is marked TYP)."
+  },
+  {
+   "id": "FCV-080132",
+   "tag": "FCV-080132",
+   "kind": "control_valve",
+   "actuator": "electric",
+   "bbox": [
+    0.711,
+    0.403,
+    0.726,
+    0.454
+   ],
+   "confidence": 0.9,
+   "notes": "Bubble FCV 080132 above a box marked M on a valve body drawn as two end bars with a diagonal and centre dot (same body symbol as V2, V4)."
+  },
+  {
+   "id": "V1",
+   "kind": "check_valve",
+   "bbox": [
+    0.513,
+    0.445,
+    0.52,
+    0.454
+   ],
+   "confidence": 0.75,
+   "notes": "On the main line between the pump suction tee and the pump discharge return (pump bypass). Symbol: two end bars with a diagonal arrow and a dot at its foot; read as check valve, no legend on this sheet."
+  },
+  {
+   "id": "V2",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.37,
+    0.491,
+    0.377,
+    0.5
+   ],
+   "confidence": 0.75,
+   "notes": "Pump suction isolation. Symbol: two end bars with a diagonal and centre dot; read as butterfly valve, no legend on this sheet."
+  },
+  {
+   "id": "EJ1",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.396,
+    0.491,
+    0.403,
+    0.5
+   ],
+   "confidence": 0.75,
+   "notes": "Wavy-sided symbol between two bars on pump suction (flexible connector / expansion joint; no legend on this sheet)."
+  },
+  {
+   "id": "R1",
+   "kind": "reducer",
+   "bbox": [
+    0.418,
+    0.491,
+    0.423,
+    0.5
+   ],
+   "confidence": 0.85,
+   "notes": "Unlabelled reducer at pump suction; no size printed."
+  },
+  {
+   "id": "R2",
+   "kind": "reducer",
+   "bbox": [
+    0.461,
+    0.48,
+    0.466,
+    0.489
+   ],
+   "confidence": 0.85,
+   "notes": "Unlabelled reducer at pump discharge; no size printed."
+  },
+  {
+   "id": "EJ2",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.483,
+    0.48,
+    0.49,
+    0.489
+   ],
+   "confidence": 0.75,
+   "notes": "Wavy-sided symbol between two bars on pump discharge (flexible connector / expansion joint; no legend on this sheet)."
+  },
+  {
+   "id": "V3",
+   "kind": "check_valve",
+   "bbox": [
+    0.513,
+    0.48,
+    0.52,
+    0.489
+   ],
+   "confidence": 0.75,
+   "notes": "Pump discharge. Same symbol as V1 (end bars, diagonal arrow, dot at foot); read as check valve."
+  },
+  {
+   "id": "V4",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.542,
+    0.48,
+    0.549,
+    0.489
+   ],
+   "confidence": 0.75,
+   "notes": "Pump discharge isolation. Same symbol as V2 (end bars, diagonal, centre dot); read as butterfly valve."
+  },
+  {
+   "id": "V5",
+   "kind": "manual_valve",
+   "bbox": [
+    0.65,
+    0.477,
+    0.656,
+    0.488
+   ],
+   "confidence": 0.7,
+   "notes": "On the turbidity sample side-stream. Bow-tie with a small filled triangle on one side; valve type not identified (no legend on this sheet)."
+  },
+  {
+   "id": "R3",
+   "kind": "reducer",
+   "bbox": [
+    0.695,
+    0.445,
+    0.7,
+    0.454
+   ],
+   "confidence": 0.85,
+   "notes": "Unlabelled reducer upstream of FCV-080132; no size printed."
+  },
+  {
+   "id": "R4",
+   "kind": "reducer",
+   "bbox": [
+    0.739,
+    0.443,
+    0.744,
+    0.452
+   ],
+   "confidence": 0.85,
+   "notes": "Unlabelled reducer downstream of FCV-080132; no size printed."
+  },
+  {
+   "id": "R5",
+   "kind": "reducer",
+   "bbox": [
+    0.755,
+    0.562,
+    0.761,
+    0.57
+   ],
+   "confidence": 0.85,
+   "notes": "Unlabelled reducer on the vertical drop after FCV-080132; no size printed."
+  },
+  {
+   "id": "R6",
+   "kind": "reducer",
+   "bbox": [
+    0.667,
+    0.647,
+    0.672,
+    0.655
+   ],
+   "confidence": 0.85,
+   "notes": "Unlabelled reducer where the drop joins the bottom horizontal line to flag a; no size printed."
+  }
+ ],
+ "instruments": [
+  {
+   "id": "XC-080111",
+   "tag": "XC-080111",
+   "name": "OPEN/CLOSE",
+   "location": "scada",
+   "bbox": [
+    0.182,
+    0.195,
+    0.196,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "YI-080111",
+   "tag": "YI-080111",
+   "name": "REMOTE",
+   "location": "scada",
+   "bbox": [
+    0.224,
+    0.195,
+    0.238,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "PIR-080121",
+   "tag": "PIR-080121",
+   "name": "PRESSURE",
+   "location": "scada",
+   "bbox": [
+    0.266,
+    0.195,
+    0.281,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "PAH-080121",
+   "tag": "PAH-080121",
+   "name": "HIGH PRESS",
+   "location": "scada",
+   "bbox": [
+    0.288,
+    0.152,
+    0.302,
+    0.174
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "YI-080101A",
+   "tag": "YI-080101A",
+   "name": "REMOTE",
+   "location": "scada",
+   "bbox": [
+    0.394,
+    0.195,
+    0.408,
+    0.217
+   ],
+   "confidence": 0.95,
+   "notes": "Suffix A is drawn at the bottom edge of the bubble, below the number 080101."
+  },
+  {
+   "id": "YC-080101",
+   "tag": "YC-080101",
+   "name": "RUN",
+   "location": "scada",
+   "bbox": [
+    0.415,
+    0.195,
+    0.429,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "YI-080101B",
+   "tag": "YI-080101B",
+   "name": "RUNNING",
+   "location": "scada",
+   "bbox": [
+    0.436,
+    0.195,
+    0.45,
+    0.217
+   ],
+   "confidence": 0.95,
+   "notes": "Suffix B is drawn at the bottom edge of the bubble, below the number 080101."
+  },
+  {
+   "id": "ZA-080101",
+   "tag": "ZA-080101",
+   "name": "FAIL",
+   "location": "scada",
+   "bbox": [
+    0.457,
+    0.152,
+    0.471,
+    0.174
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "XC-080112",
+   "tag": "XC-080112",
+   "name": "OPEN/CLOSE",
+   "location": "scada",
+   "bbox": [
+    0.542,
+    0.195,
+    0.556,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "YI-080112",
+   "tag": "YI-080112",
+   "name": "REMOTE",
+   "location": "scada",
+   "bbox": [
+    0.584,
+    0.195,
+    0.598,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FQIR-080141",
+   "tag": "FQIR-080141",
+   "name": "FLOW",
+   "location": "scada",
+   "bbox": [
+    0.605,
+    0.195,
+    0.62,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AAH-080001",
+   "tag": "AAH-080001",
+   "name": "HIGH TURB",
+   "location": "scada",
+   "bbox": [
+    0.633,
+    0.152,
+    0.648,
+    0.174
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AIR-080001",
+   "tag": "AIR-080001",
+   "name": "TURBIDITY",
+   "location": "scada",
+   "bbox": [
+    0.653,
+    0.195,
+    0.667,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "ZA-080132",
+   "tag": "ZA-080132",
+   "name": "FAIL",
+   "location": "scada",
+   "bbox": [
+    0.669,
+    0.152,
+    0.683,
+    0.174
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FC-080132",
+   "tag": "FC-080132",
+   "name": "POSITION",
+   "location": "scada",
+   "bbox": [
+    0.69,
+    0.195,
+    0.704,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "ZIC-080132",
+   "tag": "ZIC-080132",
+   "name": "CLOSED",
+   "location": "scada",
+   "bbox": [
+    0.711,
+    0.195,
+    0.726,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "HS-080111",
+   "tag": "HS-080111",
+   "name": "OCR",
+   "location": "plc",
+   "bbox": [
+    0.203,
+    0.25,
+    0.217,
+    0.272
+   ],
+   "confidence": 0.9,
+   "notes": "Circle with solid horizontal line, drawn in the MBR PLC band between the DO and DI points; annotated OCR."
+  },
+  {
+   "id": "HS-080112",
+   "tag": "HS-080112",
+   "name": "OCR",
+   "location": "plc",
+   "bbox": [
+    0.563,
+    0.25,
+    0.577,
+    0.272
+   ],
+   "confidence": 0.9,
+   "notes": "Circle with solid horizontal line, drawn in the MBR PLC band between the DO and DI points; annotated OCR."
+  },
+  {
+   "id": "HS-080101",
+   "tag": "HS-080101",
+   "name": "HOR",
+   "location": "local_panel",
+   "bbox": [
+    0.415,
+    0.305,
+    0.429,
+    0.327
+   ],
+   "confidence": 0.95,
+   "notes": "In MCC band; annotated HOR"
+  },
+  {
+   "id": "JS-080101",
+   "tag": "JS-080101",
+   "location": "local_panel",
+   "bbox": [
+    0.436,
+    0.305,
+    0.45,
+    0.327
+   ],
+   "confidence": 0.95,
+   "notes": "In MCC band"
+  },
+  {
+   "id": "PT-080121",
+   "tag": "PT-080121",
+   "location": "field",
+   "measures": {
+    "line": "L1"
+   },
+   "bbox": [
+    0.266,
+    0.406,
+    0.281,
+    0.428
+   ],
+   "confidence": 0.95,
+   "notes": "Solid tap onto the permeate header between the first vent branch and the pump suction tee."
+  },
+  {
+   "id": "PG-080101A",
+   "tag": "PG-080101A",
+   "location": "field",
+   "measures": {
+    "line": "L4",
+    "after": "V2"
+   },
+   "bbox": [
+    0.379,
+    0.457,
+    0.394,
+    0.479
+   ],
+   "confidence": 0.95,
+   "notes": "Pump suction gauge, tapped between the isolation valve and the flexible connector."
+  },
+  {
+   "id": "PG-080101B",
+   "tag": "PG-080101B",
+   "location": "field",
+   "measures": {
+    "line": "L5",
+    "after": "EJ2"
+   },
+   "bbox": [
+    0.486,
+    0.454,
+    0.5,
+    0.476
+   ],
+   "confidence": 0.95,
+   "notes": "Pump discharge gauge, tapped just downstream of the flexible connector."
+  },
+  {
+   "id": "FE-080141",
+   "tag": "FE-080141",
+   "name": "Magnetic flow element (box marked M)",
+   "location": "field",
+   "bbox": [
+    0.605,
+    0.417,
+    0.62,
+    0.464
+   ],
+   "confidence": 0.95,
+   "notes": "Drawn as bubble FE 080141 and as in-line M box labelled FE-080141"
+  },
+  {
+   "id": "FIT-080141",
+   "tag": "FIT-080141",
+   "location": "field",
+   "bbox": [
+    0.605,
+    0.395,
+    0.62,
+    0.417
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble drawn touching the top of FE-080141."
+  },
+  {
+   "id": "AE-080001",
+   "tag": "AE-080001",
+   "name": "TURBIDITY",
+   "location": "field",
+   "measures": {
+    "line": "L7",
+    "after": "V5"
+   },
+   "bbox": [
+    0.653,
+    0.417,
+    0.667,
+    0.439
+   ],
+   "confidence": 0.85,
+   "notes": "Stem from the bubble is drawn with a gap where it crosses the main permeate line and lands on the sample side-stream below it (between the sample valve and the DRAIN arrow). 'TURBIDITY' is taken from the SCADA bubble AIR-080001 label."
+  },
+  {
+   "id": "AIT-080001",
+   "tag": "AIT-080001",
+   "location": "field",
+   "bbox": [
+    0.653,
+    0.395,
+    0.667,
+    0.417
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble drawn touching the top of AE-080001."
+  },
+  {
+   "id": "ZSC-080132",
+   "tag": "ZSC-080132",
+   "location": "field",
+   "measures": {
+    "item": "FCV-080132"
+   },
+   "bbox": [
+    0.711,
+    0.381,
+    0.726,
+    0.403
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble drawn touching the top of the FCV-080132 bubble."
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC1",
+   "to": "OPC3",
+   "path": [
+    "V1",
+    "FE-080141",
+    "R3",
+    "FCV-080132",
+    "R4",
+    "R5",
+    "R6"
+   ],
+   "service": "PERMEATE",
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "Main permeate line: from flag B, joined by the line from flag C, right along the header (vent XV-080111 branch, PT-080121 tap, pump suction tee), through bypass valve V1, pump discharge return tee, vent XV-080112 branch, FE-080141, sample tee, R3, FCV-080132, R4, then down (R5), left, down (R6) onto a horizontal line that runs right to flag a. That bottom horizontal line extends a short stub left of the R6 junction ending in a bar (capped end). No flow arrows on the main line; direction from flag texts and the pump arrow."
+  },
+  {
+   "id": "L2",
+   "from": "OPC2",
+   "to": {
+    "line": "L1"
+   },
+   "path": [],
+   "service": "PERMEATE",
+   "flow_direction": "inferred",
+   "confidence": 0.9,
+   "notes": "Lower permeate line from flag C; joins the line from flag B at a common vertical header before the first vent branch."
+  },
+  {
+   "id": "L3",
+   "from": {
+    "line": "L1"
+   },
+   "to": "B1",
+   "path": [
+    "XV-080111"
+   ],
+   "service": "VENT",
+   "flow_direction": "inferred",
+   "confidence": 0.9,
+   "notes": "Vertical branch up from the header through XV-080111, labelled VENT TO ATMOSPHERE (TYP)."
+  },
+  {
+   "id": "L4",
+   "from": {
+    "line": "L1"
+   },
+   "to": "PMP-080101",
+   "path": [
+    "V2",
+    "EJ1",
+    "R1"
+   ],
+   "service": "PERMEATE",
+   "flow_direction": "shown",
+   "confidence": 0.9,
+   "notes": "Pump suction: tees down off the header downstream of the PT-080121 tap; filled arrowhead into the pump."
+  },
+  {
+   "id": "L5",
+   "from": "PMP-080101",
+   "to": {
+    "line": "L1",
+    "after": "V1"
+   },
+   "path": [
+    "R2",
+    "EJ2",
+    "V3",
+    "V4"
+   ],
+   "service": "PERMEATE",
+   "flow_direction": "inferred",
+   "confidence": 0.9,
+   "notes": "Pump discharge returning up to the main line downstream of V1."
+  },
+  {
+   "id": "L6",
+   "from": {
+    "line": "L1",
+    "after": "V1"
+   },
+   "to": "B2",
+   "path": [
+    "XV-080112"
+   ],
+   "service": "VENT",
+   "flow_direction": "inferred",
+   "confidence": 0.8,
+   "notes": "Vertical branch up from the main line (between the pump discharge return and FE-080141) through XV-080112; ends open above the valve with no label."
+  },
+  {
+   "id": "L7",
+   "from": {
+    "line": "L1",
+    "after": "FE-080141"
+   },
+   "to": "B3",
+   "path": [
+    "V5"
+   ],
+   "service": "SAMPLE",
+   "flow_direction": "shown",
+   "confidence": 0.8,
+   "notes": "Side-stream teeing down off the main line after FE-080141, across, up through V5 to a short header where AE-080001 connects, then a filled arrow down to DRAIN."
+  }
+ ],
+ "signals": [
+  {
+   "from": "XC-080111",
+   "to": "HS-080111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to untagged MBR PLC DO point, then dashed to HS"
+  },
+  {
+   "from": "HS-080111",
+   "to": "YI-080111",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to untagged MBR PLC DI point, then software link to SCADA (REMOTE)"
+  },
+  {
+   "from": "HS-080111",
+   "to": "XV-080111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed from HS down through the MCC band to field bubble XV; solid line from the bubble to the S (solenoid) box on the valve"
+  },
+  {
+   "from": "XC-080112",
+   "to": "HS-080112",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to untagged MBR PLC DO point, then dashed to HS"
+  },
+  {
+   "from": "HS-080112",
+   "to": "YI-080112",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to untagged MBR PLC DI point, then software link to SCADA (REMOTE)"
+  },
+  {
+   "from": "HS-080112",
+   "to": "XV-080112",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed from HS down through the MCC band to field bubble XV; solid line from the bubble to the S (solenoid) box on the valve"
+  },
+  {
+   "from": "PT-080121",
+   "to": "PIR-080121",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed to untagged MBR PLC AI point, then software link to SCADA"
+  },
+  {
+   "from": "PT-080121",
+   "to": "PAH-080121",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Software link branching at a junction dot just above the AI point (on the AI-to-PIR link), arrowhead into PAH (HIGH PRESS)"
+  },
+  {
+   "from": "HS-080101",
+   "to": "YI-080101A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed from HS (MCC) left and up to untagged MBR PLC DI point, then software link to SCADA (REMOTE)"
+  },
+  {
+   "from": "YC-080101",
+   "to": "HS-080101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to untagged MBR PLC DO point, then dashed to HS in MCC"
+  },
+  {
+   "from": "JS-080101",
+   "to": "YI-080101B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to untagged MBR PLC DI point, then software link to SCADA (RUNNING)"
+  },
+  {
+   "from": "HS-080101",
+   "to": "JS-080101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7,
+   "notes": "Dashed line between bubbles in MCC; direction inferred"
+  },
+  {
+   "from": "JS-080101",
+   "to": "PMP-080101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed line from JS (MCC) down to the pump; it crosses the main permeate line"
+  },
+  {
+   "from": "YI-080101B",
+   "to": "ZA-080101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from the bar joining the RUN and RUNNING links (junction dots above the DO and DI points) to FAIL, arrowhead into ZA"
+  },
+  {
+   "from": "YC-080101",
+   "to": "ZA-080101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from the bar joining the RUN and RUNNING links (junction dots above the DO and DI points) to FAIL, arrowhead into ZA"
+  },
+  {
+   "from": "FE-080141",
+   "to": "FIT-080141",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Bubbles drawn touching; no separate signal line"
+  },
+  {
+   "from": "FIT-080141",
+   "to": "FQIR-080141",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed to untagged MBR PLC AI point, then software link to SCADA (FLOW)"
+  },
+  {
+   "from": "AE-080001",
+   "to": "AIT-080001",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Bubbles drawn touching; no separate signal line"
+  },
+  {
+   "from": "AIT-080001",
+   "to": "AIR-080001",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed to untagged MBR PLC AI point, then software link to SCADA (TURBIDITY)"
+  },
+  {
+   "from": "AIT-080001",
+   "to": "AAH-080001",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Software link branching at a junction dot just above the AI point (on the AI-to-AIR link), arrowhead into AAH (HIGH TURB)"
+  },
+  {
+   "from": "FC-080132",
+   "to": "FCV-080132",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA (POSITION) to untagged MBR PLC AO point, then dashed (jogging right) down to the FCV 080132 bubble on the motor actuator"
+  },
+  {
+   "from": "ZSC-080132",
+   "to": "ZIC-080132",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to untagged MBR PLC DI point, then software link to SCADA (CLOSED)"
+  },
+  {
+   "from": "FC-080132",
+   "to": "ZA-080132",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from the bar joining the POSITION and CLOSED links (junction dots above the AO and DI points) to FAIL, arrowhead into ZA"
+  },
+  {
+   "from": "ZIC-080132",
+   "to": "ZA-080132",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from the bar joining the POSITION and CLOSED links (junction dots above the AO and DI points) to FAIL, arrowhead into ZA"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "B / UPPER PERMEATE FROM MB-01 / REF SHT P203",
+   "other_drawing": "P-203",
+   "other_item": "MB-01",
+   "bbox": [
+    0.058,
+    0.422,
+    0.122,
+    0.444
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "C / LOWER PERMEATE FROM MB-01 / REF SHT P203",
+   "other_drawing": "P-203",
+   "other_item": "MB-01",
+   "bbox": [
+    0.058,
+    0.454,
+    0.122,
+    0.478
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "a / PERMEATE TO DISINFECTION",
+   "other_drawing": null,
+   "bbox": [
+    0.812,
+    0.65,
+    0.876,
+    0.672
+   ],
+   "confidence": 0.8,
+   "notes": "Drawn with the same lettered off-page flag symbol as B and C, but NO 'REF SHT' line is printed: the destination drawing is not stated on this sheet and has not been filled in."
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "VENT TO ATMOSPHERE (TYP)",
+   "direction": "sink",
+   "bbox": [
+    0.194,
+    0.373,
+    0.222,
+    0.401
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "B2",
+   "name": "Open end above XV-080112 (unlabelled; VENT TO ATMOSPHERE note at XV-080111 is marked TYP)",
+   "direction": "sink",
+   "bbox": [
+    0.573,
+    0.398,
+    0.582,
+    0.41
+   ],
+   "confidence": 0.7,
+   "notes": "No label is printed at this branch end."
+  },
+  {
+   "id": "B3",
+   "name": "DRAIN",
+   "direction": "sink",
+   "bbox": [
+    0.665,
+    0.47,
+    0.678,
+    0.491
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Flag 'a PERMEATE TO DISINFECTION': no 'REF SHT' drawing number is printed, so the destination drawing is unknown from this sheet.",
+  "Meaning of the boxed '4' inside pump PMP-080101 is not defined on this sheet.",
+  "Valve types are read from symbols without a legend: V1/V3 (end bars, diagonal arrow, dot at foot) taken as check valves; V2/V4 and the FCV-080132 body (end bars, diagonal, centre dot) taken as butterfly valves; V5 (bow-tie with small filled triangle on one side) not identified; EJ1/EJ2 (wavy symbol between bars) taken as flexible connectors.",
+  "Branch above XV-080112 ends open with no destination label.",
+  "No line numbers, pipe sizes or reducer sizes are printed on this sheet.",
+  "Title block: revision, designed/drawn/checked/approved and client project number fields are blank."
+ ]
+}

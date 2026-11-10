@@ -46,3 +46,12 @@ Every node carries `label`, `sheets`, `confidence`, `dexpi_class` and a `provena
 - **QA flags.** The `issues` table holds them with a severity, a code and the node ids involved. `qa_flags(tag)` can read this table directly.
 - **Isolation valves.** Not a concept in the upstream schema. It has to be computed in our layer: walk `FLOWS_TO` in both directions from the asset to the first valve-type `Component` on every branch.
 - **Extraction is not a script.** Upstream ships no API call. The reading step is a Claude Code session following `SKILL.md`. `make graph` rebuilds the graph from committed page files; a fully unattended `make build` needs our own extraction runner (milestone M2 or M3).
+
+## Findings from the first build (Pahala WWTP, 8 sheets)
+
+- **Tag grammar.** Sheets P-201 to P-205 number instruments with six digits (`FIT-040141`, `LSH-120102`). Sheet P-101 uses `100.124` and `100, 114A`. The upstream builder does not parse either as ISA (172 `non_isa_tag` notes), so it infers no loops there. Only 6 loops were found, all on P-101 and P-401. A plant-specific tag scheme is needed before `control_loop(tag)` is useful.
+- **Repeated SCADA tags.** `LCH-001`, `LCL-001` and similar appear on several sheets for different services. The builder keeps them apart as `#2`, `#3`. These need a sheet-scoped key.
+- **Incomplete tags on the drawings.** Several bubbles are printed with a blank suffix (`LSH 100,`). They are recorded as drawn at lower confidence.
+- **Untagged equipment.** The two anoxic recycle pumps, the contact basin and the irrigation tank have no printed tag. They get sheet-scoped ids and cannot be joined to history by tag.
+- **Positions.** 340 of 495 nodes have a bounding box. Pipe segments, loops and boundaries have none.
+- **Off-page connectors.** 18 of 23 paired. The 5 unpaired ones point to sheets outside the selection (P-206 to P-210).

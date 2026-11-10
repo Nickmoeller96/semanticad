@@ -1,0 +1,1267 @@
+{
+ "schema_version": "1.0",
+ "page": 10,
+ "sheet": {
+  "drawing_number": "P-201",
+  "title": "P&IDS ANOXIC BASIN",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "TYPICAL FOR 2 PUMPS: the SCADA/PLC/MCC instrumentation (SPEED, RUNNING, RUN, REMOTE, HIGH TEMP, HIGH MOIST, FAIL, SS, VFD, HS, TY, MY, MS numbered 040121) is drawn once for the first pump; the second pump's leads (TSH-040122, ME-040122, motor lead) end at break marks.",
+   "Horizontal bands: SCADA HMI / MBR PLC / MCC / REMOTE I/O CABINET 2. Bubble position gives its location.",
+   "Diamond-in-square symbols marked DI, DO, AI, AO are untagged PLC / remote I/O points; they are not recorded as instruments, each is noted on the signal that passes through it.",
+   "Sheet 10 of 25. CAD filename P-200 P&IDS.DWG. No revisions entered in revision table."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "AX-01",
+   "tag": "AX-01",
+   "kind": "tank",
+   "name": "ANOXIC BASIN",
+   "attributes": {
+    "asset_tag": "TNK-040100"
+   },
+   "bbox": [
+    0.287,
+    0.647,
+    0.647,
+    0.793
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "MXR-040111",
+   "tag": "MXR-040111",
+   "kind": "mixer",
+   "name": "Submersible mixer",
+   "part_of": "AX-01",
+   "bbox": [
+    0.316,
+    0.711,
+    0.341,
+    0.749
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "P1",
+   "kind": "sump_pump",
+   "name": "Submersible recycle pump (no tag drawn; instruments numbered 040121)",
+   "bbox": [
+    0.483,
+    0.754,
+    0.501,
+    0.788
+   ],
+   "confidence": 0.8,
+   "notes": "Pump symbol inside AX-01 with no equipment tag printed. TYPICAL FOR 2 PUMPS."
+  },
+  {
+   "id": "P2",
+   "kind": "sump_pump",
+   "name": "Submersible recycle pump (no tag drawn; instruments numbered 040122)",
+   "bbox": [
+    0.54,
+    0.754,
+    0.557,
+    0.788
+   ],
+   "confidence": 0.8,
+   "notes": "Pump symbol inside AX-01 with no equipment tag printed. Its power/signal leads end at break marks."
+  }
+ ],
+ "components": [
+  {
+   "id": "V1",
+   "kind": "reducer",
+   "bbox": [
+    0.494,
+    0.656,
+    0.501,
+    0.672
+   ],
+   "notes": "Unlabelled reducer on P1 discharge riser",
+   "confidence": 0.85
+  },
+  {
+   "id": "V2",
+   "kind": "check_valve",
+   "bbox": [
+    0.493,
+    0.626,
+    0.502,
+    0.645
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V3",
+   "kind": "manual_valve",
+   "bbox": [
+    0.493,
+    0.586,
+    0.502,
+    0.604
+   ],
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Open (unfilled) diamond.",
+   "confidence": 0.7
+  },
+  {
+   "id": "V4",
+   "kind": "reducer",
+   "bbox": [
+    0.55,
+    0.656,
+    0.558,
+    0.672
+   ],
+   "notes": "Unlabelled reducer on P2 discharge riser",
+   "confidence": 0.85
+  },
+  {
+   "id": "V5",
+   "kind": "check_valve",
+   "bbox": [
+    0.55,
+    0.626,
+    0.559,
+    0.645
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V6",
+   "kind": "manual_valve",
+   "bbox": [
+    0.55,
+    0.539,
+    0.559,
+    0.557
+   ],
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Filled diamond.",
+   "confidence": 0.7
+  },
+  {
+   "id": "V7",
+   "kind": "reducer",
+   "size": "12x10",
+   "bbox": [
+    0.647,
+    0.526,
+    0.658,
+    0.538
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "V8",
+   "kind": "reducer",
+   "size": "10x12",
+   "bbox": [
+    0.71,
+    0.526,
+    0.721,
+    0.538
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "V9",
+   "kind": "manual_valve",
+   "bbox": [
+    0.79,
+    0.526,
+    0.8,
+    0.538
+   ],
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Open (unfilled) diamond.",
+   "confidence": 0.7
+  },
+  {
+   "id": "V10",
+   "kind": "manual_valve",
+   "bbox": [
+    0.737,
+    0.7,
+    0.747,
+    0.712
+   ],
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Filled diamond. Nothing is drawn beyond this valve.",
+   "confidence": 0.7
+  }
+ ],
+ "instruments": [
+  {
+   "id": "YI-040111A",
+   "tag": "YI-040111A",
+   "location": "scada",
+   "bbox": [
+    0.265,
+    0.195,
+    0.281,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "RUNNING"
+  },
+  {
+   "id": "YC-040111",
+   "tag": "YC-040111",
+   "location": "scada",
+   "bbox": [
+    0.287,
+    0.195,
+    0.302,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "RUN"
+  },
+  {
+   "id": "YI-040111B",
+   "tag": "YI-040111B",
+   "location": "scada",
+   "bbox": [
+    0.308,
+    0.195,
+    0.323,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "REMOTE"
+  },
+  {
+   "id": "TAH-040111",
+   "tag": "TAH-040111",
+   "location": "scada",
+   "bbox": [
+    0.329,
+    0.195,
+    0.344,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "HIGH TEMP"
+  },
+  {
+   "id": "MAH-040111",
+   "tag": "MAH-040111",
+   "location": "scada",
+   "bbox": [
+    0.351,
+    0.195,
+    0.366,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "HIGH MOIST"
+  },
+  {
+   "id": "ZA-040101",
+   "tag": "ZA-040101",
+   "location": "scada",
+   "bbox": [
+    0.308,
+    0.146,
+    0.323,
+    0.169
+   ],
+   "confidence": 0.9,
+   "name": "FAIL",
+   "notes": "Number is drawn as 040101 although the bubble sits in the mixer 040111 group (fed from YI-040111A / YC-040111); recorded as drawn."
+  },
+  {
+   "id": "LAL-040102",
+   "tag": "LAL-040102",
+   "location": "scada",
+   "bbox": [
+    0.414,
+    0.195,
+    0.429,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "LOW LEVEL"
+  },
+  {
+   "id": "LAH-040103",
+   "tag": "LAH-040103",
+   "location": "scada",
+   "bbox": [
+    0.435,
+    0.195,
+    0.45,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "HIGH LEVEL"
+  },
+  {
+   "id": "LIR-040101",
+   "tag": "LIR-040101",
+   "location": "scada",
+   "bbox": [
+    0.457,
+    0.195,
+    0.472,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "LEVEL"
+  },
+  {
+   "id": "LAH-040101",
+   "tag": "LAH-040101",
+   "location": "scada",
+   "bbox": [
+    0.478,
+    0.146,
+    0.493,
+    0.169
+   ],
+   "confidence": 0.95,
+   "name": "HIGH LEVEL"
+  },
+  {
+   "id": "LAL-040101",
+   "tag": "LAL-040101",
+   "location": "scada",
+   "bbox": [
+    0.499,
+    0.146,
+    0.514,
+    0.169
+   ],
+   "confidence": 0.95,
+   "name": "LOW LEVEL"
+  },
+  {
+   "id": "FIC-040121",
+   "tag": "FIC-040121",
+   "location": "scada",
+   "bbox": [
+    0.52,
+    0.195,
+    0.535,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "SPEED",
+   "notes": "Drawn as FIC with label SPEED; TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "YI-040121A",
+   "tag": "YI-040121A",
+   "location": "scada",
+   "bbox": [
+    0.541,
+    0.195,
+    0.556,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "RUNNING",
+   "notes": "TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "YC-040121",
+   "tag": "YC-040121",
+   "location": "scada",
+   "bbox": [
+    0.562,
+    0.195,
+    0.578,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "RUN",
+   "notes": "TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "YI-040121B",
+   "tag": "YI-040121B",
+   "location": "scada",
+   "bbox": [
+    0.584,
+    0.195,
+    0.599,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "REMOTE",
+   "notes": "TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "TAH-040121",
+   "tag": "TAH-040121",
+   "location": "scada",
+   "bbox": [
+    0.605,
+    0.195,
+    0.62,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "HIGH TEMP",
+   "notes": "TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "MAH-040121",
+   "tag": "MAH-040121",
+   "location": "scada",
+   "bbox": [
+    0.626,
+    0.195,
+    0.641,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "HIGH MOIST",
+   "notes": "TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "ZA-040121",
+   "tag": "ZA-040121",
+   "location": "scada",
+   "bbox": [
+    0.584,
+    0.146,
+    0.599,
+    0.169
+   ],
+   "confidence": 0.95,
+   "name": "FAIL",
+   "notes": "TYPICAL FOR 2 PUMPS"
+  },
+  {
+   "id": "FIR-040141",
+   "tag": "FIR-040141",
+   "location": "scada",
+   "bbox": [
+    0.668,
+    0.195,
+    0.684,
+    0.219
+   ],
+   "confidence": 0.95,
+   "name": "FLOW"
+  },
+  {
+   "id": "FAL-040141",
+   "tag": "FAL-040141",
+   "location": "scada",
+   "bbox": [
+    0.689,
+    0.146,
+    0.705,
+    0.169
+   ],
+   "confidence": 0.95,
+   "name": "LOW FLOW"
+  },
+  {
+   "id": "JS-040111",
+   "tag": "JS-040111",
+   "location": "local_panel",
+   "bbox": [
+    0.265,
+    0.303,
+    0.281,
+    0.327
+   ],
+   "confidence": 0.95,
+   "notes": "In MCC band"
+  },
+  {
+   "id": "HS-040111",
+   "tag": "HS-040111",
+   "location": "local_panel",
+   "bbox": [
+    0.287,
+    0.303,
+    0.302,
+    0.327
+   ],
+   "confidence": 0.95,
+   "name": "HOR",
+   "notes": "In MCC band; annotated HOR"
+  },
+  {
+   "id": "TY-040111",
+   "tag": "TY-040111",
+   "location": "local_panel",
+   "bbox": [
+    0.329,
+    0.303,
+    0.344,
+    0.327
+   ],
+   "confidence": 0.95,
+   "notes": "In MCC band"
+  },
+  {
+   "id": "SS-040121",
+   "tag": "SS-040121",
+   "location": "local_panel",
+   "bbox": [
+    0.51,
+    0.303,
+    0.525,
+    0.327
+   ],
+   "confidence": 0.95,
+   "name": "POT/HIM",
+   "notes": "In MCC band; annotated POT/HIM"
+  },
+  {
+   "id": "VFD-040121",
+   "tag": "VFD-040121",
+   "location": "local_panel",
+   "bbox": [
+    0.541,
+    0.303,
+    0.556,
+    0.327
+   ],
+   "confidence": 0.95,
+   "notes": "In MCC band; variable frequency drive bubble for recycle pump"
+  },
+  {
+   "id": "HS-040121",
+   "tag": "HS-040121",
+   "location": "local_panel",
+   "bbox": [
+    0.562,
+    0.303,
+    0.578,
+    0.327
+   ],
+   "confidence": 0.95,
+   "name": "HOR",
+   "notes": "In MCC band; annotated HOR"
+  },
+  {
+   "id": "TY-040121",
+   "tag": "TY-040121",
+   "location": "local_panel",
+   "bbox": [
+    0.605,
+    0.303,
+    0.62,
+    0.327
+   ],
+   "confidence": 0.95,
+   "notes": "In MCC band"
+  },
+  {
+   "id": "MY-040111",
+   "tag": "MY-040111",
+   "location": "local_panel",
+   "bbox": [
+    0.351,
+    0.372,
+    0.366,
+    0.396
+   ],
+   "confidence": 0.95,
+   "notes": "In REMOTE I/O CABINET 2 band"
+  },
+  {
+   "id": "MS-040111",
+   "tag": "MS-040111",
+   "location": "local_panel",
+   "bbox": [
+    0.372,
+    0.372,
+    0.387,
+    0.396
+   ],
+   "confidence": 0.95,
+   "notes": "In REMOTE I/O CABINET 2 band"
+  },
+  {
+   "id": "MY-040121",
+   "tag": "MY-040121",
+   "location": "local_panel",
+   "bbox": [
+    0.626,
+    0.372,
+    0.641,
+    0.396
+   ],
+   "confidence": 0.95,
+   "notes": "In REMOTE I/O CABINET 2 band"
+  },
+  {
+   "id": "MS-040121",
+   "tag": "MS-040121",
+   "location": "local_panel",
+   "bbox": [
+    0.647,
+    0.372,
+    0.663,
+    0.396
+   ],
+   "confidence": 0.95,
+   "notes": "In REMOTE I/O CABINET 2 band"
+  },
+  {
+   "id": "TSH-040111",
+   "tag": "TSH-040111",
+   "location": "field",
+   "bbox": [
+    0.329,
+    0.611,
+    0.344,
+    0.634
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "MXR-040111"
+   }
+  },
+  {
+   "id": "ME-040111",
+   "tag": "ME-040111",
+   "location": "field",
+   "bbox": [
+    0.344,
+    0.611,
+    0.359,
+    0.634
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "MXR-040111"
+   },
+   "notes": "Moisture element; bubble adjoins TSH-040111 on the mixer lead"
+  },
+  {
+   "id": "LSL-040102",
+   "tag": "LSL-040102",
+   "location": "field",
+   "bbox": [
+    0.414,
+    0.611,
+    0.429,
+    0.634
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "AX-01"
+   }
+  },
+  {
+   "id": "LSH-040103",
+   "tag": "LSH-040103",
+   "location": "field",
+   "bbox": [
+    0.435,
+    0.611,
+    0.45,
+    0.634
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "AX-01"
+   }
+  },
+  {
+   "id": "LT-040101",
+   "tag": "LT-040101",
+   "location": "field",
+   "bbox": [
+    0.457,
+    0.611,
+    0.472,
+    0.634
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "AX-01"
+   }
+  },
+  {
+   "id": "LE-040101",
+   "tag": "LE-040101",
+   "location": "field",
+   "bbox": [
+    0.457,
+    0.773,
+    0.472,
+    0.797
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "AX-01"
+   },
+   "notes": "Element on basin floor, labelled LE-040101 (no bubble)"
+  },
+  {
+   "id": "TSH-040121",
+   "tag": "TSH-040121",
+   "location": "field",
+   "bbox": [
+    0.506,
+    0.611,
+    0.521,
+    0.634
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "P1"
+   }
+  },
+  {
+   "id": "ME-040121",
+   "tag": "ME-040121",
+   "location": "field",
+   "bbox": [
+    0.52,
+    0.611,
+    0.535,
+    0.634
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "P1"
+   }
+  },
+  {
+   "id": "TSH-040122",
+   "tag": "TSH-040122",
+   "location": "field",
+   "bbox": [
+    0.562,
+    0.611,
+    0.577,
+    0.634
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "P2"
+   },
+   "notes": "Signal line ends at a break mark; destination not drawn (TYPICAL FOR 2 PUMPS)"
+  },
+  {
+   "id": "ME-040122",
+   "tag": "ME-040122",
+   "location": "field",
+   "bbox": [
+    0.577,
+    0.611,
+    0.592,
+    0.634
+   ],
+   "confidence": 0.9,
+   "measures": {
+    "item": "P2"
+   },
+   "notes": "Signal line ends at a break mark; destination not drawn (TYPICAL FOR 2 PUMPS)"
+  },
+  {
+   "id": "FIT-040141",
+   "tag": "FIT-040141",
+   "location": "field",
+   "bbox": [
+    0.668,
+    0.464,
+    0.684,
+    0.488
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FE-040141",
+   "tag": "FE-040141",
+   "location": "field",
+   "bbox": [
+    0.666,
+    0.488,
+    0.686,
+    0.542
+   ],
+   "confidence": 0.95,
+   "name": "Magnetic flow element (box marked M)",
+   "notes": "Drawn as bubble FE 040141 and as in-line M box labelled FE-040141"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC1",
+   "to": "AX-01",
+   "path": [],
+   "service": "EQUIPMENT GAL PS INFLUENT",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L2",
+   "from": "OPC2",
+   "to": "AX-01",
+   "path": [],
+   "service": "SCREENED INFLT. FROM HEADWORKS",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L3",
+   "from": "OPC3",
+   "to": "AX-01",
+   "path": [],
+   "service": "pH ADJUSTMENT",
+   "flow_direction": "shown",
+   "confidence": 0.9
+  },
+  {
+   "id": "L4",
+   "from": "AX-01",
+   "to": "P1",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "No suction pipe drawn: pump is drawn submerged in the basin."
+  },
+  {
+   "id": "L5",
+   "from": "AX-01",
+   "to": "P2",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "No suction pipe drawn: pump is drawn submerged in the basin."
+  },
+  {
+   "id": "L6",
+   "from": "P1",
+   "to": "OPC4",
+   "path": [
+    "V1",
+    "V2",
+    "V3",
+    "V7",
+    "FE-040141",
+    "V8",
+    "V9"
+   ],
+   "service": "RECYCLE",
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "No flow arrows on the line; direction from pump discharge and the outgoing flag. No line number printed."
+  },
+  {
+   "id": "L7",
+   "from": "P2",
+   "to": {
+    "line": "L6",
+    "after": "V3"
+   },
+   "path": [
+    "V4",
+    "V5",
+    "V6"
+   ],
+   "service": "RECYCLE",
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "P2 discharge riser tees into the common recycle header upstream of the 12x10 reducer."
+  },
+  {
+   "id": "L8",
+   "from": "AX-01",
+   "to": "B1",
+   "path": [
+    "V10"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "Pipe from the basin wall near the floor, up to a valve; nothing is drawn or labelled beyond the valve."
+  }
+ ],
+ "signals": [
+  {
+   "from": "JS-040111",
+   "to": "MXR-040111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed line from JS (MCC) down to the mixer motor"
+  },
+  {
+   "from": "JS-040111",
+   "to": "YI-040111A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA"
+  },
+  {
+   "from": "YC-040111",
+   "to": "HS-040111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to MBR PLC DO, then dashed to HS in MCC"
+  },
+  {
+   "from": "HS-040111",
+   "to": "YI-040111B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (REMOTE)"
+  },
+  {
+   "from": "HS-040111",
+   "to": "JS-040111",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7,
+   "notes": "Dashed line between bubbles in MCC; direction inferred"
+  },
+  {
+   "from": "TY-040111",
+   "to": "HS-040111",
+   "type": "electrical",
+   "purpose": "trip",
+   "confidence": 0.6,
+   "notes": "Dashed line between bubbles in MCC; direction and purpose inferred"
+  },
+  {
+   "from": "TSH-040111",
+   "to": "TY-040111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "TY-040111",
+   "to": "TAH-040111",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA"
+  },
+  {
+   "from": "ME-040111",
+   "to": "MS-040111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "MS-040111",
+   "to": "MY-040111",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.75,
+   "notes": "Dashed line between bubbles in Remote I/O Cabinet 2; direction inferred"
+  },
+  {
+   "from": "MY-040111",
+   "to": "MAH-040111",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Via DI in Remote I/O Cabinet 2, then software link to SCADA"
+  },
+  {
+   "from": "YI-040111A",
+   "to": "ZA-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from junction of the RUNNING and RUN links to FAIL"
+  },
+  {
+   "from": "YC-040111",
+   "to": "ZA-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from junction of the RUNNING and RUN links to FAIL"
+  },
+  {
+   "from": "LSL-040102",
+   "to": "LAL-040102",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Dashed to DI in Remote I/O Cabinet 2, then software link to SCADA"
+  },
+  {
+   "from": "LSH-040103",
+   "to": "LAH-040103",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Dashed to DI in Remote I/O Cabinet 2, then software link to SCADA"
+  },
+  {
+   "from": "LE-040101",
+   "to": "LT-040101",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Solid line from element on basin floor up to LT bubble"
+  },
+  {
+   "from": "LT-040101",
+   "to": "LIR-040101",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Dashed to AI in Remote I/O Cabinet 2, then software link to SCADA"
+  },
+  {
+   "from": "LIR-040101",
+   "to": "LAH-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "LIR-040101",
+   "to": "LAL-040101",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  },
+  {
+   "from": "FIC-040121",
+   "to": "VFD-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to MBR PLC AO, then dashed to VFD (SPEED)"
+  },
+  {
+   "from": "VFD-040121",
+   "to": "YI-040121A",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA"
+  },
+  {
+   "from": "YC-040121",
+   "to": "HS-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to MBR PLC DO, then dashed to HS in MCC"
+  },
+  {
+   "from": "HS-040121",
+   "to": "YI-040121B",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (REMOTE)"
+  },
+  {
+   "from": "SS-040121",
+   "to": "VFD-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.75,
+   "notes": "Dashed line between bubbles in MCC (POT/HIM); direction inferred"
+  },
+  {
+   "from": "HS-040121",
+   "to": "VFD-040121",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.7,
+   "notes": "Dashed line between bubbles in MCC; direction inferred"
+  },
+  {
+   "from": "TY-040121",
+   "to": "HS-040121",
+   "type": "electrical",
+   "purpose": "trip",
+   "confidence": 0.6,
+   "notes": "Dashed line between bubbles in MCC; direction and purpose inferred"
+  },
+  {
+   "from": "VFD-040121",
+   "to": "P1",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed line from VFD down to the pump"
+  },
+  {
+   "from": "TSH-040121",
+   "to": "TY-040121",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "TY-040121",
+   "to": "TAH-040121",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA"
+  },
+  {
+   "from": "ME-040121",
+   "to": "MS-040121",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85
+  },
+  {
+   "from": "MS-040121",
+   "to": "MY-040121",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.75,
+   "notes": "Dashed line between bubbles in Remote I/O Cabinet 2; direction inferred"
+  },
+  {
+   "from": "MY-040121",
+   "to": "MAH-040121",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Via DI in Remote I/O Cabinet 2, then software link to SCADA"
+  },
+  {
+   "from": "YI-040121A",
+   "to": "ZA-040121",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from junction of the RUNNING and RUN links to FAIL"
+  },
+  {
+   "from": "YC-040121",
+   "to": "ZA-040121",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Software line from junction of the RUNNING and RUN links to FAIL"
+  },
+  {
+   "from": "FE-040141",
+   "to": "FIT-040141",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Bubbles drawn touching"
+  },
+  {
+   "from": "FIT-040141",
+   "to": "FIR-040141",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.85,
+   "notes": "Dashed to AI in Remote I/O Cabinet 2, then software link to SCADA"
+  },
+  {
+   "from": "FIR-040141",
+   "to": "FAL-040141",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "A / EQUIPMENT GAL PS INFLUENT / REF SHT P208",
+   "other_drawing": "P-208",
+   "bbox": [
+    0.057,
+    0.567,
+    0.121,
+    0.592
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "A / SCREENED INFLT. FROM HEADWORKS / REF SHT P101",
+   "other_drawing": "P-101",
+   "bbox": [
+    0.057,
+    0.599,
+    0.121,
+    0.625
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC3",
+   "direction": "in",
+   "name": "A / pH ADJUSTMENT / REF SHT P207",
+   "other_drawing": "P-207",
+   "bbox": [
+    0.057,
+    0.632,
+    0.121,
+    0.657
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC4",
+   "direction": "out",
+   "name": "b / RECYCLE TO PA-01 / REF SHT P202",
+   "other_drawing": "P-202",
+   "other_item": "PA-01",
+   "bbox": [
+    0.812,
+    0.519,
+    0.876,
+    0.545
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "Unlabelled line end beyond valve on basin low-level outlet",
+   "direction": "sink",
+   "bbox": [
+    0.743,
+    0.698,
+    0.753,
+    0.715
+   ],
+   "confidence": 0.5,
+   "notes": "Nothing drawn beyond the valve: no flag, label or destination."
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "No equipment tags are printed for the two submersible pumps in AX-01 (recorded as P1 and P2).",
+  "Valve type of the diamond-between-bars symbols (V3, V6, V9, V10) could not be determined; no legend on this sheet. Filled vs unfilled diamond meaning not confirmed.",
+  "Signal destinations for TSH-040122, ME-040122 and the P2 motor lead are not drawn (lines end at break marks under TYPICAL FOR 2 PUMPS).",
+  "Line from basin low-level outlet ends at valve V10 with no destination or label.",
+  "No line numbers or pipe sizes are printed on this sheet other than reducer sizes 12x10 and 10x12."
+ ]
+}

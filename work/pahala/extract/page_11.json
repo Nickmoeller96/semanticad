@@ -1,0 +1,415 @@
+{
+ "schema_version": "1.0",
+ "page": 11,
+ "sheet": {
+  "drawing_number": "P-202",
+  "title": "P&IDS PRE-AERATION BASIN",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "Horizontal bands: SCADA HMI / REMOTE I/O CABINET 2 / MCC. Bubble position gives its location. Nothing is drawn in the MCC band on this sheet.",
+   "Diamond-in-square symbols marked AI are untagged remote I/O points; they are not recorded as instruments, each is noted on the signal that passes through it.",
+   "The process air line from flag A to the diffuser FBD-050111 is drawn dashed; the other process lines are thin solid.",
+   "Hexagon TP 01 with 'BO | EQ' and opposing arrows sits on a pipe joint symbol on the process air line (tie point / scope break as drawn; no legend on this sheet).",
+   "Sheet 11 of 25. CAD filename P-200 P&IDS.DWG. No revisions entered in revision table. No line numbers or pipe sizes are printed."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "PA-01",
+   "tag": "PA-01",
+   "kind": "tank",
+   "name": "PRE-AERATION BASIN",
+   "attributes": {
+    "asset_tag": "TNK-050100"
+   },
+   "bbox": [
+    0.287,
+    0.647,
+    0.647,
+    0.794
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FBD-050111",
+   "tag": "FBD-050111",
+   "kind": "other",
+   "name": "FBD (diffuser symbol on basin floor, fed by process air)",
+   "part_of": "PA-01",
+   "bbox": [
+    0.446,
+    0.768,
+    0.488,
+    0.79
+   ],
+   "confidence": 0.9,
+   "notes": "Only the tag FBD-050111 is printed; no descriptive text."
+  }
+ ],
+ "components": [
+  {
+   "id": "TP-01",
+   "tag": "TP-01",
+   "kind": "other",
+   "name": "TP 01 tie point (BO | EQ) at pipe joint",
+   "bbox": [
+    0.44,
+    0.519,
+    0.461,
+    0.553
+   ],
+   "confidence": 0.8,
+   "notes": "Hexagon 'TP 01' over a pair of joint bars on the process air line; 'BO' with arrow on the upstream side, 'EQ' with arrow on the downstream side. Meaning of BO/EQ not defined on this sheet."
+  },
+  {
+   "id": "WE-050121",
+   "tag": "WE-050121",
+   "kind": "other",
+   "name": "WE-050121 (weir/overflow symbol on basin end wall at water level)",
+   "bbox": [
+    0.643,
+    0.659,
+    0.649,
+    0.683
+   ],
+   "confidence": 0.85,
+   "notes": "Rectangle with diagonal, lower half filled, on top of the right-hand basin wall where the overflow line leaves."
+  },
+  {
+   "id": "V-120122",
+   "tag": "V-120122",
+   "kind": "manual_valve",
+   "bbox": [
+    0.738,
+    0.702,
+    0.746,
+    0.712
+   ],
+   "confidence": 0.7,
+   "notes": "Symbol: filled diamond between two end bars; valve type not identified (no legend on this sheet). Number 120122 recorded as drawn. Nothing is drawn beyond this valve."
+  }
+ ],
+ "instruments": [
+  {
+   "id": "AE-050101",
+   "tag": "AE-050101",
+   "name": "pH",
+   "location": "field",
+   "measures": {
+    "item": "PA-01"
+   },
+   "bbox": [
+    0.521,
+    0.612,
+    0.535,
+    0.634
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AIT-050101",
+   "tag": "AIT-050101",
+   "location": "field",
+   "bbox": [
+    0.521,
+    0.58,
+    0.535,
+    0.601
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AIR-050101",
+   "tag": "AIR-050101",
+   "name": "pH",
+   "location": "scada",
+   "bbox": [
+    0.521,
+    0.195,
+    0.535,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AE-050102",
+   "tag": "AE-050102",
+   "name": "DO/TEMP",
+   "location": "field",
+   "measures": {
+    "item": "PA-01"
+   },
+   "bbox": [
+    0.584,
+    0.612,
+    0.599,
+    0.634
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "TIT-050102",
+   "tag": "TIT-050102",
+   "location": "field",
+   "bbox": [
+    0.584,
+    0.58,
+    0.599,
+    0.601
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AIT-050102",
+   "tag": "AIT-050102",
+   "location": "field",
+   "measures": {
+    "item": "PA-01"
+   },
+   "bbox": [
+    0.599,
+    0.58,
+    0.613,
+    0.601
+   ],
+   "confidence": 0.9,
+   "notes": "Bubble drawn touching TIT-050102 (combined DO/TEMP transmitter above probe AE-050102). No separate line is drawn from AE-050102 to this bubble; measures set to the basin the shared probe sits in."
+  },
+  {
+   "id": "TIR-050102",
+   "tag": "TIR-050102",
+   "name": "TEMP",
+   "location": "scada",
+   "bbox": [
+    0.584,
+    0.195,
+    0.599,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AIR-050102",
+   "tag": "AIR-050102",
+   "name": "DO",
+   "location": "scada",
+   "bbox": [
+    0.606,
+    0.195,
+    0.62,
+    0.217
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "TAL-050102",
+   "tag": "TAL-050102",
+   "name": "LOW TEMP",
+   "location": "scada",
+   "bbox": [
+    0.563,
+    0.151,
+    0.577,
+    0.174
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "AAL-050102",
+   "tag": "AAL-050102",
+   "name": "LOW DO",
+   "location": "scada",
+   "bbox": [
+    0.627,
+    0.151,
+    0.641,
+    0.174
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC1",
+   "to": "FBD-050111",
+   "path": [
+    "TP-01"
+   ],
+   "service": "PROCESS AIR",
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "Drawn dashed from flag A, through the TP 01 joint, then down into the basin to the diffuser. No arrowhead; direction from the flag text 'FROM BLOWERS'."
+  },
+  {
+   "id": "L2",
+   "from": "OPC2",
+   "to": "PA-01",
+   "path": [],
+   "service": "RECYCLE",
+   "flow_direction": "shown",
+   "confidence": 0.95,
+   "notes": "Arrowhead onto the basin water surface at the left end."
+  },
+  {
+   "id": "L3",
+   "from": "PA-01",
+   "to": "OPC3",
+   "path": [
+    "WE-050121"
+   ],
+   "service": "OVERFLOW",
+   "flow_direction": "inferred",
+   "confidence": 0.9,
+   "notes": "Leaves the basin over WE-050121 at water level. No arrowhead; direction from the flag text 'TO MBR BASIN'."
+  },
+  {
+   "id": "L4",
+   "from": "PA-01",
+   "to": "B1",
+   "path": [
+    "V-120122"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "Pipe through the right-hand basin wall near the floor, running right and up to valve V-120122; nothing is drawn or labelled beyond the valve."
+  }
+ ],
+ "signals": [
+  {
+   "from": "AE-050101",
+   "to": "AIT-050101",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9
+  },
+  {
+   "from": "AIT-050101",
+   "to": "AIR-050101",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed to untagged AI point (diamond-in-square) in REMOTE I/O CABINET 2, then software link (line with circles) to SCADA"
+  },
+  {
+   "from": "AE-050102",
+   "to": "TIT-050102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9
+  },
+  {
+   "from": "TIT-050102",
+   "to": "TIR-050102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed to untagged AI point (diamond-in-square) in REMOTE I/O CABINET 2, then software link to SCADA"
+  },
+  {
+   "from": "TIT-050102",
+   "to": "TAL-050102",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Software link branching at a junction dot just above the TEMP AI point (on the AI-to-TIR link), arrowhead into TAL (LOW TEMP)"
+  },
+  {
+   "from": "AIT-050102",
+   "to": "AIR-050102",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed up, jogging right below untagged AI point (diamond-in-square) in REMOTE I/O CABINET 2, then software link to SCADA"
+  },
+  {
+   "from": "AIT-050102",
+   "to": "AAL-050102",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Software link branching at a junction dot just above the DO AI point (on the AI-to-AIR link), arrowhead into AAL (LOW DO)"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "A / PROCESS AIR FROM BLOWERS / REF SHT P205",
+   "other_drawing": "P-205",
+   "bbox": [
+    0.058,
+    0.536,
+    0.122,
+    0.559
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "B / RECYCLE FROM AX-01 / REF SHT P201",
+   "other_drawing": "P-201",
+   "other_item": "AX-01",
+   "bbox": [
+    0.058,
+    0.569,
+    0.122,
+    0.591
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "a / OVERFLOW TO MBR BASIN / REF SHT P203",
+   "other_drawing": "P-203",
+   "bbox": [
+    0.812,
+    0.659,
+    0.876,
+    0.682
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "Unlabelled line end beyond valve V-120122 on basin low-level outlet",
+   "direction": "sink",
+   "bbox": [
+    0.742,
+    0.7,
+    0.752,
+    0.714
+   ],
+   "confidence": 0.5,
+   "notes": "Nothing drawn beyond the valve: no flag, label or destination."
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Valve type of V-120122 (filled diamond between bars) could not be determined; no legend on this sheet.",
+  "Line from the basin low-level outlet ends at valve V-120122 with no destination or label.",
+  "Meaning of 'BO' / 'EQ' at tie point TP 01 is not defined on this sheet.",
+  "No line numbers or pipe sizes are printed on this sheet.",
+  "Title block: revision, designed/drawn/checked/approved and client project number fields are blank."
+ ]
+}

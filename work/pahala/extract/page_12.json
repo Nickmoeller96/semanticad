@@ -1,0 +1,1096 @@
+{
+ "schema_version": "1.0",
+ "page": 12,
+ "sheet": {
+  "drawing_number": "P-203",
+  "title": "P&IDS MEMBRANE BIOREACTOR BASIN",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "Horizontal bands: SCADA HMI / MBR PLC / MCC. Bubble position gives its location.",
+   "Diamond-in-square symbols marked DI, DO, AI are untagged PLC I/O points; they are not recorded as instruments, each is noted on the signal that passes through it.",
+   "Dashed outline = future: the third membrane unit 'SMU-' is labelled (FUTURE MEMBRANES) and its piping is drawn dashed.",
+   "A pair of parallel solid lines runs across all SMU risers just above the valve row (x 0.33 to 0.59) and turns up to a hexagon flag 'TP 03' with 'BO' and 'EQ' either side of two facing filled triangles. Read as a tie-point / scope-break marker (not a pipe); the risers are taken as continuous through it. Meaning of TP, BO and EQ is not explained on this sheet.",
+   "Line styles: process air is a thin dashed line; the diffuser return through XV-070181 is a heavy dashed line with no service label; permeate, acid wash, overflow and WAS are solid.",
+   "Sheet 12 of 25. CAD filename P-200 P&IDS.DWG. No revisions entered in revision table."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "MB-01",
+   "tag": "MB-01",
+   "kind": "tank",
+   "name": "MEMBRANE BIOREACTOR BASIN",
+   "attributes": {
+    "asset_tag": "TNK-070100"
+   },
+   "bbox": [
+    0.286,
+    0.647,
+    0.647,
+    0.793
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "SMU-070111",
+   "tag": "SMU-070111",
+   "kind": "membrane_filter",
+   "name": "Submerged membrane unit (two stacked cassette blocks over a diffuser)",
+   "part_of": "MB-01",
+   "bbox": [
+    0.345,
+    0.685,
+    0.369,
+    0.79
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "SMU-070121",
+   "tag": "SMU-070121",
+   "kind": "membrane_filter",
+   "name": "Submerged membrane unit (two stacked cassette blocks over a diffuser)",
+   "part_of": "MB-01",
+   "bbox": [
+    0.407,
+    0.685,
+    0.431,
+    0.79
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "SMU-FUT",
+   "tag": "SMU-",
+   "kind": "membrane_filter",
+   "name": "SMU- (FUTURE MEMBRANES)",
+   "part_of": "MB-01",
+   "status": "future",
+   "bbox": [
+    0.538,
+    0.685,
+    0.562,
+    0.79
+   ],
+   "confidence": 0.7,
+   "notes": "Tag printed as 'SMU-' with no number. Drawn dashed. A dashed box containing '4' is drawn inside the unit base; its meaning is not explained on this sheet."
+  }
+ ],
+ "components": [
+  {
+   "id": "V1",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.326,
+    0.54,
+    0.338,
+    0.558
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: two end bars with a diagonal stroke and centre dot; read as butterfly valve (no legend on this sheet)."
+  },
+  {
+   "id": "V2",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.326,
+    0.641,
+    0.338,
+    0.659
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: wavy-sided fitting between two bars; read as flexible connector / expansion joint."
+  },
+  {
+   "id": "V3",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.388,
+    0.54,
+    0.4,
+    0.558
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: two end bars with a diagonal stroke and centre dot; read as butterfly valve (no legend on this sheet)."
+  },
+  {
+   "id": "V4",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.388,
+    0.641,
+    0.4,
+    0.659
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: wavy-sided fitting between two bars; read as flexible connector / expansion joint."
+  },
+  {
+   "id": "V5",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.52,
+    0.54,
+    0.532,
+    0.558
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: two end bars with a diagonal stroke and centre dot; read as butterfly valve (no legend on this sheet).",
+   "status": "future"
+  },
+  {
+   "id": "V6",
+   "kind": "expansion_joint",
+   "bbox": [
+    0.52,
+    0.641,
+    0.532,
+    0.659
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: wavy-sided fitting between two bars; read as flexible connector / expansion joint.",
+   "status": "future"
+  },
+  {
+   "id": "V7",
+   "kind": "manual_valve",
+   "bbox": [
+    0.376,
+    0.54,
+    0.388,
+    0.558
+   ],
+   "confidence": 0.7,
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Open (unfilled) diamond."
+  },
+  {
+   "id": "V8",
+   "kind": "manual_valve",
+   "bbox": [
+    0.438,
+    0.54,
+    0.45,
+    0.558
+   ],
+   "confidence": 0.7,
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Open (unfilled) diamond."
+  },
+  {
+   "id": "V9",
+   "kind": "manual_valve",
+   "bbox": [
+    0.569,
+    0.54,
+    0.581,
+    0.558
+   ],
+   "confidence": 0.7,
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Open (unfilled) diamond.",
+   "status": "future"
+  },
+  {
+   "id": "V10",
+   "kind": "manual_valve",
+   "bbox": [
+    0.507,
+    0.54,
+    0.519,
+    0.558
+   ],
+   "confidence": 0.5,
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Open (unfilled) diamond drawn left of the future SMU air drop with NO line through it; not connected to anything as drawn, so it is in no line path."
+  },
+  {
+   "id": "XV-070181",
+   "tag": "XV-070181",
+   "kind": "motor_operated_valve",
+   "actuator": "electric",
+   "bbox": [
+    0.308,
+    0.445,
+    0.324,
+    0.517
+   ],
+   "confidence": 0.9,
+   "notes": "Filled diamond valve body between end bars with 'M' actuator box; tag from bubble XV 070181 on the actuator stem. Valve body type not identified."
+  },
+  {
+   "id": "V11",
+   "kind": "ball_valve",
+   "bbox": [
+    0.339,
+    0.54,
+    0.351,
+    0.558
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V12",
+   "kind": "ball_valve",
+   "bbox": [
+    0.363,
+    0.54,
+    0.375,
+    0.558
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V13",
+   "kind": "ball_valve",
+   "bbox": [
+    0.401,
+    0.54,
+    0.413,
+    0.558
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V14",
+   "kind": "ball_valve",
+   "bbox": [
+    0.425,
+    0.54,
+    0.437,
+    0.558
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "V15",
+   "kind": "ball_valve",
+   "bbox": [
+    0.532,
+    0.54,
+    0.544,
+    0.558
+   ],
+   "confidence": 0.85,
+   "status": "future"
+  },
+  {
+   "id": "V16",
+   "kind": "ball_valve",
+   "bbox": [
+    0.556,
+    0.54,
+    0.568,
+    0.558
+   ],
+   "confidence": 0.85,
+   "status": "future"
+  },
+  {
+   "id": "V17",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.684,
+    0.4,
+    0.696,
+    0.418
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: two end bars with a diagonal stroke and centre dot; read as butterfly valve (no legend on this sheet). On upper permeate header."
+  },
+  {
+   "id": "V18",
+   "kind": "butterfly_valve",
+   "bbox": [
+    0.684,
+    0.433,
+    0.696,
+    0.451
+   ],
+   "confidence": 0.75,
+   "notes": "Symbol: two end bars with a diagonal stroke and centre dot; read as butterfly valve (no legend on this sheet). On lower permeate header."
+  },
+  {
+   "id": "V19",
+   "kind": "ball_valve",
+   "bbox": [
+    0.628,
+    0.379,
+    0.64,
+    0.397
+   ],
+   "confidence": 0.85,
+   "normal_position": "closed",
+   "notes": "Filled bow-tie with open centre circle (normally closed). Acid wash branch to upper permeate header."
+  },
+  {
+   "id": "V20",
+   "kind": "ball_valve",
+   "bbox": [
+    0.647,
+    0.379,
+    0.659,
+    0.397
+   ],
+   "confidence": 0.85,
+   "normal_position": "closed",
+   "notes": "Filled bow-tie with open centre circle (normally closed). Acid wash branch to lower permeate header."
+  },
+  {
+   "id": "V21",
+   "kind": "manual_valve",
+   "bbox": [
+    0.184,
+    0.699,
+    0.196,
+    0.717
+   ],
+   "confidence": 0.7,
+   "normal_position": "closed",
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Filled diamond."
+  },
+  {
+   "id": "TV-070182",
+   "tag": "TV-070182",
+   "kind": "other",
+   "name": "Tube with T-handle at the water surface inside a box on the basin wall (reads as a telescoping valve; no descriptive text printed)",
+   "bbox": [
+    0.631,
+    0.651,
+    0.647,
+    0.719
+   ],
+   "confidence": 0.8,
+   "notes": "Tag printed vertically beside the symbol. Not an ISA temperature valve; no instrument bubble or signal."
+  },
+  {
+   "id": "V22",
+   "kind": "manual_valve",
+   "bbox": [
+    0.677,
+    0.737,
+    0.689,
+    0.755
+   ],
+   "confidence": 0.7,
+   "normal_position": "closed",
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Filled diamond."
+  },
+  {
+   "id": "V23",
+   "kind": "other",
+   "bbox": [
+    0.698,
+    0.732,
+    0.71,
+    0.75
+   ],
+   "confidence": 0.6,
+   "name": "Untagged square body on the line with a dome (diaphragm-type) actuator on a stem",
+   "actuator": "pneumatic",
+   "notes": "No tag, no signal line, no legend; device type not identified. Actuator type read from the dome symbol only."
+  },
+  {
+   "id": "V24",
+   "kind": "manual_valve",
+   "bbox": [
+    0.752,
+    0.737,
+    0.764,
+    0.755
+   ],
+   "confidence": 0.7,
+   "normal_position": "closed",
+   "notes": "Symbol: diamond between two end bars; valve type not identified (no legend on this sheet). Filled diamond."
+  }
+ ],
+ "instruments": [
+  {
+   "id": "ZA-070181",
+   "tag": "ZA-070181",
+   "location": "scada",
+   "bbox": [
+    0.265,
+    0.15,
+    0.281,
+    0.174
+   ],
+   "confidence": 0.95,
+   "name": "FAIL"
+  },
+  {
+   "id": "ZIC-070181",
+   "tag": "ZIC-070181",
+   "location": "scada",
+   "bbox": [
+    0.287,
+    0.194,
+    0.303,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "CLOSED"
+  },
+  {
+   "id": "ZIO-070181",
+   "tag": "ZIO-070181",
+   "location": "scada",
+   "bbox": [
+    0.308,
+    0.194,
+    0.324,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "OPENED"
+  },
+  {
+   "id": "YC-070181",
+   "tag": "YC-070181",
+   "location": "scada",
+   "bbox": [
+    0.329,
+    0.194,
+    0.345,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "OPEN/CLOSE"
+  },
+  {
+   "id": "YI-070181",
+   "tag": "YI-070181",
+   "location": "scada",
+   "bbox": [
+    0.371,
+    0.194,
+    0.387,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "REMOTE"
+  },
+  {
+   "id": "HS-070181",
+   "tag": "HS-070181",
+   "location": "main_panel",
+   "bbox": [
+    0.35,
+    0.249,
+    0.366,
+    0.273
+   ],
+   "confidence": 0.8,
+   "name": "OCR",
+   "notes": "Circle with solid horizontal line, drawn in the band between the SCADA HMI and MBR PLC lines, between a DO and a DI point. 'OCR' printed beside it."
+  },
+  {
+   "id": "ZSO-070181",
+   "tag": "ZSO-070181",
+   "location": "field",
+   "bbox": [
+    0.308,
+    0.401,
+    0.324,
+    0.425
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "XV-070181"
+   }
+  },
+  {
+   "id": "ZSC-070181",
+   "tag": "ZSC-070181",
+   "location": "field",
+   "bbox": [
+    0.308,
+    0.423,
+    0.324,
+    0.447
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "XV-070181"
+   }
+  },
+  {
+   "id": "LAL-070101",
+   "tag": "LAL-070101",
+   "location": "scada",
+   "bbox": [
+    0.583,
+    0.194,
+    0.599,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "LOW LEVEL"
+  },
+  {
+   "id": "LAH-070102",
+   "tag": "LAH-070102",
+   "location": "scada",
+   "bbox": [
+    0.604,
+    0.194,
+    0.62,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "HIGH LEVEL"
+  },
+  {
+   "id": "LSL-070101",
+   "tag": "LSL-070101",
+   "location": "field",
+   "bbox": [
+    0.583,
+    0.612,
+    0.599,
+    0.636
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "MB-01"
+   }
+  },
+  {
+   "id": "LSH-070102",
+   "tag": "LSH-070102",
+   "location": "field",
+   "bbox": [
+    0.604,
+    0.612,
+    0.62,
+    0.636
+   ],
+   "confidence": 0.95,
+   "measures": {
+    "item": "MB-01"
+   }
+  },
+  {
+   "id": "FIR-070186",
+   "tag": "FIR-070186",
+   "location": "scada",
+   "bbox": [
+    0.668,
+    0.194,
+    0.684,
+    0.218
+   ],
+   "confidence": 0.95,
+   "name": "FLOW"
+  },
+  {
+   "id": "FAL-070186",
+   "tag": "FAL-070186",
+   "location": "scada",
+   "bbox": [
+    0.689,
+    0.15,
+    0.705,
+    0.174
+   ],
+   "confidence": 0.95,
+   "name": "LOW FLOW"
+  },
+  {
+   "id": "FIT-070186",
+   "tag": "FIT-070186",
+   "location": "field",
+   "bbox": [
+    0.73,
+    0.671,
+    0.746,
+    0.695
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FE-070186",
+   "tag": "FE-070186",
+   "location": "field",
+   "bbox": [
+    0.73,
+    0.693,
+    0.747,
+    0.755
+   ],
+   "confidence": 0.95,
+   "name": "In-line flow element, box marked 'M' on the WAS line",
+   "notes": "Bubble FE 070186 above the line and label 'FE-070186' below the 'M' box."
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "PROCESS AIR",
+   "from": "OPC2",
+   "to": "SMU-070111",
+   "path": [
+    "V1",
+    "V2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Thin dashed line. Header from flag C runs right to a capped end at about x=0.53; first drop goes to the left end of the diffuser under SMU-070111."
+  },
+  {
+   "id": "L2",
+   "service": "PROCESS AIR",
+   "from": {
+    "line": "L1"
+   },
+   "to": "SMU-070121",
+   "path": [
+    "V3",
+    "V4"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "Second drop off the air header to the diffuser under SMU-070121."
+  },
+  {
+   "id": "L3",
+   "size": "3\"",
+   "service": "A",
+   "line_number": "3\"-A",
+   "from": {
+    "line": "L1"
+   },
+   "to": "SMU-FUT",
+   "path": [
+    "V5",
+    "V6"
+   ],
+   "flow_direction": "inferred",
+   "status": "future",
+   "confidence": 0.8,
+   "notes": "Dashed (future) drop at the capped end of the air header; line label 3\"-A."
+  },
+  {
+   "id": "L4",
+   "from": "SMU-070111",
+   "to": "MB-01",
+   "path": [
+    "V7",
+    "XV-070181"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.75,
+   "notes": "Heavy dashed line, no service label: from the right end of the diffuser under SMU-070111 up through V7 to a heavy dashed header, left through XV-070181, then down with an arrowhead into the basin at the left wall. Header also runs right to a capped end at about x=0.58. Direction from the arrowhead at the basin."
+  },
+  {
+   "id": "L5",
+   "from": "SMU-070121",
+   "to": {
+    "line": "L4",
+    "after": "V7"
+   },
+   "path": [
+    "V8"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "Heavy dashed riser from the diffuser under SMU-070121. Its top is drawn up to the double scope-break line; the last gap to the heavy dashed header is not drawn (dash gap), connection inferred."
+  },
+  {
+   "id": "L6",
+   "size": "3\"",
+   "service": "A",
+   "line_number": "3\"-A",
+   "from": "SMU-FUT",
+   "to": {
+    "line": "L4",
+    "after": "V7"
+   },
+   "path": [
+    "V9"
+   ],
+   "flow_direction": "inferred",
+   "status": "future",
+   "confidence": 0.7,
+   "notes": "Dashed (future) riser from the right side of the future SMU diffuser to the heavy dashed header near its capped end; line label 3\"-A."
+  },
+  {
+   "id": "L7",
+   "service": "UPPER PERMEATE",
+   "from": "SMU-070111",
+   "to": "OPC3",
+   "path": [
+    "V12",
+    "V17"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "From the upper cassette block of SMU-070111 up to the upper permeate header (capped at its left end), then right to flag b. Direction from the flag."
+  },
+  {
+   "id": "L8",
+   "service": "UPPER PERMEATE",
+   "from": "SMU-070121",
+   "to": {
+    "line": "L7",
+    "after": "V12"
+   },
+   "path": [
+    "V14"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85
+  },
+  {
+   "id": "L9",
+   "service": "UPPER PERMEATE",
+   "from": "SMU-FUT",
+   "to": {
+    "line": "L7",
+    "after": "V12"
+   },
+   "path": [
+    "V16"
+   ],
+   "flow_direction": "inferred",
+   "status": "future",
+   "confidence": 0.8
+  },
+  {
+   "id": "L10",
+   "service": "LOWER PERMEATE",
+   "from": "SMU-070111",
+   "to": "OPC4",
+   "path": [
+    "V11",
+    "V18"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "From the lower cassette block of SMU-070111 up to the lower permeate header (capped at its left end), then right to flag c. Direction from the flag."
+  },
+  {
+   "id": "L11",
+   "service": "LOWER PERMEATE",
+   "from": "SMU-070121",
+   "to": {
+    "line": "L10",
+    "after": "V11"
+   },
+   "path": [
+    "V13"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85
+  },
+  {
+   "id": "L12",
+   "service": "LOWER PERMEATE",
+   "from": "SMU-FUT",
+   "to": {
+    "line": "L10",
+    "after": "V11"
+   },
+   "path": [
+    "V15"
+   ],
+   "flow_direction": "inferred",
+   "status": "future",
+   "confidence": 0.8
+  },
+  {
+   "id": "L13",
+   "service": "ACID WASH",
+   "from": "OPC1",
+   "to": {
+    "line": "L10",
+    "after": "V11"
+   },
+   "path": [
+    "V20"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "From flag A (acid wash) right to about x=0.653, down through V20, hopping over the upper permeate header, to the lower permeate header upstream of V18."
+  },
+  {
+   "id": "L14",
+   "service": "ACID WASH",
+   "from": {
+    "line": "L13"
+   },
+   "to": {
+    "line": "L7",
+    "after": "V12"
+   },
+   "path": [
+    "V19"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.85,
+   "notes": "Branch off the acid wash line at about x=0.634 down through V19 to the upper permeate header upstream of V17."
+  },
+  {
+   "id": "L15",
+   "service": "OVERFLOW FROM PRE-AERATION BASIN",
+   "from": "OPC5",
+   "to": "MB-01",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.9,
+   "notes": "Arrowhead into the basin at the left wall."
+  },
+  {
+   "id": "L16",
+   "from": "MB-01",
+   "to": "B1",
+   "path": [
+    "V21"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "Thin line from a wall penetration at the bottom left of the basin, left and up to filled diamond valve V21; nothing is drawn beyond the valve."
+  },
+  {
+   "id": "L17",
+   "line_number": "3\"-WAS",
+   "size": "3\"",
+   "service": "WAS",
+   "from": "MB-01",
+   "to": "OPC6",
+   "path": [
+    "TV-070182",
+    "V22",
+    "V23",
+    "FE-070186",
+    "V24"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.85,
+   "notes": "Leaves the basin right wall at the TV-070182 box."
+  }
+ ],
+ "signals": [
+  {
+   "from": "ZSC-070181",
+   "to": "ZIC-070181",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (CLOSED)"
+  },
+  {
+   "from": "ZSO-070181",
+   "to": "ZIO-070181",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (OPENED)"
+  },
+  {
+   "from": "YC-070181",
+   "to": "HS-070181",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Software link SCADA to MBR PLC DO, then dashed to HS"
+  },
+  {
+   "from": "HS-070181",
+   "to": "YI-070181",
+   "type": "electrical",
+   "purpose": "status",
+   "confidence": 0.85,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (REMOTE)"
+  },
+  {
+   "from": "HS-070181",
+   "to": "XV-070181",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "Dashed line from HS down to the XV 070181 bubble on the valve actuator"
+  },
+  {
+   "from": "ZIC-070181",
+   "to": "ZA-070181",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Common data-link bus (line with small circles) with filled junction dots on the ZIC, ZIO and YC legs; arrowhead into ZA (FAIL)"
+  },
+  {
+   "from": "ZIO-070181",
+   "to": "ZA-070181",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Common data-link bus to ZA (FAIL)"
+  },
+  {
+   "from": "YC-070181",
+   "to": "ZA-070181",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Common data-link bus to ZA (FAIL)"
+  },
+  {
+   "from": "LSL-070101",
+   "to": "LAL-070101",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.9,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (LOW LEVEL)"
+  },
+  {
+   "from": "LSH-070102",
+   "to": "LAH-070102",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.9,
+   "notes": "Dashed to MBR PLC DI, then software link to SCADA (HIGH LEVEL)"
+  },
+  {
+   "from": "FE-070186",
+   "to": "FIT-070186",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Bubbles drawn touching; no signal line style"
+  },
+  {
+   "from": "FIT-070186",
+   "to": "FIR-070186",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed to MBR PLC AI, then software link to SCADA (FLOW)"
+  },
+  {
+   "from": "FIR-070186",
+   "to": "FAL-070186",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.85,
+   "notes": "Data link from the junction dot on the FIR leg; arrowhead into FAL (LOW FLOW)"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "A / ACID WASH / REF SHT P206",
+   "other_drawing": "P-206",
+   "bbox": [
+    0.058,
+    0.354,
+    0.122,
+    0.377
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC2",
+   "direction": "in",
+   "name": "C / PROCESS AIR FROM BLOWERS / REF SHT P205",
+   "other_drawing": "P-205",
+   "bbox": [
+    0.058,
+    0.463,
+    0.122,
+    0.486
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC3",
+   "direction": "out",
+   "name": "b / UPPER PERMEATE TO COLLECTION / REF SHT P204",
+   "other_drawing": "P-204",
+   "bbox": [
+    0.812,
+    0.397,
+    0.876,
+    0.421
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC4",
+   "direction": "out",
+   "name": "c / LOWER PERMEATE TO COLLECTION / REF SHT P204",
+   "other_drawing": "P-204",
+   "bbox": [
+    0.812,
+    0.43,
+    0.876,
+    0.453
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC5",
+   "direction": "in",
+   "name": "A / OVERFLOW FROM PRE-AERATION BASIN / REF SHT P202",
+   "other_drawing": "P-202",
+   "bbox": [
+    0.058,
+    0.616,
+    0.143,
+    0.639
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC6",
+   "direction": "out",
+   "name": "e / WAS TO WAS-01 / REF SHT P210",
+   "other_drawing": "P-210",
+   "other_item": "WAS-01",
+   "line_number": "3\"-WAS",
+   "bbox": [
+    0.812,
+    0.735,
+    0.876,
+    0.759
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "Unlabelled line end beyond valve on basin bottom outlet",
+   "direction": "sink",
+   "bbox": [
+    0.183,
+    0.699,
+    0.19,
+    0.716
+   ],
+   "confidence": 0.5,
+   "notes": "Nothing drawn beyond the valve: no flag, label or destination."
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "TP 03 flag with BO / EQ at about (0.61, 0.50): legible, but its meaning and whether the parallel double line beneath it is a scope-break marker or a pipe cannot be confirmed from this sheet.",
+  "Future membrane unit tag printed only as 'SMU-' (number blank); dashed box '4' inside it unexplained.",
+  "Open diamond valve symbol at about (0.513, 0.549) is drawn with no line through it.",
+  "Untagged square-body device with dome actuator on the WAS line at about (0.704, 0.741): device type not identified.",
+  "Heavy dashed line through XV-070181 carries no service label; the riser from SMU-070121 does not visibly reach the header."
+ ]
+}

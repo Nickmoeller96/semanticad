@@ -1,0 +1,1246 @@
+{
+ "schema_version": "1.0",
+ "page": 14,
+ "sheet": {
+  "drawing_number": "P-205",
+  "title": "P&IDS PRE-AERATION AND MEMBRANE BIOREACTOR TOWERS",
+  "revision": null,
+  "drawing_type": "pid",
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "rotation": 0,
+  "legend_notes": [
+   "TYPICAL FOR 2 BLOWERS: the SCADA HMI / MBR PLC I/O rows are drawn once, wired to BLR-100101's panel; the BLR-090101 panel bus and VFD feed end at break symbols",
+   "Horizontal bands: SCADA HMI, MBR PLC, MDP-2 (CB 480V feeding VFD-100101)",
+   "Each blower sits in a dashed box labelled SOUND ENCLOSURE with a control panel box holding VFD, OIT and signal bubbles",
+   "ADDITIONAL SIGNALS AVAILABLE FOR MONITORING: REMOTE, WAIT, OUTLET PRESSURE, INLET TEMPERATURE, OUTLET TEMPERATURE, MOTOR CURRENT, POWER, ERROR CODE AND RUNTIME (printed at both blowers)",
+   "Title block title reads TOWERS although the sheet shows the blowers",
+   "Process air lines are drawn thin dashed; no line numbers, sizes or valve tags are printed on this sheet"
+  ]
+ },
+ "equipment": [
+  {
+   "id": "BLR-100101",
+   "tag": "BLR-100101",
+   "kind": "blower",
+   "name": "PRE-AERATION BLOWER 1",
+   "bbox": [
+    0.095,
+    0.413,
+    0.115,
+    0.441
+   ],
+   "confidence": 0.95,
+   "notes": "Inside dashed box labelled SOUND ENCLOSURE. Note printed: ADDITIONAL SIGNALS AVAILABLE FOR MONITORING: REMOTE, WAIT, OUTLET PRESSURE, INLET TEMPERATURE, OUTLET TEMPERATURE, MOTOR CURRENT, POWER, ERROR CODE AND RUNTIME."
+  },
+  {
+   "id": "BLR-090101",
+   "tag": "BLR-090101",
+   "kind": "blower",
+   "name": "MEMBRANE BIOREACTOR BLOWER 1",
+   "bbox": [
+    0.095,
+    0.628,
+    0.115,
+    0.658
+   ],
+   "confidence": 0.95,
+   "notes": "Inside dashed box labelled SOUND ENCLOSURE. Same ADDITIONAL SIGNALS note as BLR-100101."
+  },
+  {
+   "id": "FLT1",
+   "kind": "filter",
+   "part_of": "BLR-100101",
+   "bbox": [
+    0.083,
+    0.383,
+    0.095,
+    0.408
+   ],
+   "confidence": 0.6,
+   "notes": "Two unlabelled cross-hatched rectangles piped together and to the blower inlet; read as inlet filter/silencer elements, type not printed"
+  },
+  {
+   "id": "FLT2",
+   "kind": "filter",
+   "part_of": "BLR-090101",
+   "bbox": [
+    0.083,
+    0.597,
+    0.095,
+    0.632
+   ],
+   "confidence": 0.6,
+   "notes": "Two unlabelled cross-hatched rectangles piped together and to the blower inlet; read as inlet filter/silencer elements, type not printed"
+  }
+ ],
+ "components": [
+  {
+   "id": "PSV1",
+   "kind": "relief_valve",
+   "bbox": [
+    0.374,
+    0.387,
+    0.389,
+    0.418
+   ],
+   "confidence": 0.8,
+   "notes": "Untagged angle valve with spring, arrow discharging to the side, on blower discharge inside enclosure"
+  },
+  {
+   "id": "CV1",
+   "kind": "check_valve",
+   "bbox": [
+    0.399,
+    0.411,
+    0.406,
+    0.423
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "BFV1",
+   "kind": "butterfly_valve",
+   "actuator": "manual",
+   "bbox": [
+    0.426,
+    0.413,
+    0.432,
+    0.423
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "RED1",
+   "kind": "reducer",
+   "bbox": [
+    0.446,
+    0.413,
+    0.452,
+    0.423
+   ],
+   "confidence": 0.8,
+   "notes": "Small end towards blower"
+  },
+  {
+   "id": "BFV2",
+   "kind": "butterfly_valve",
+   "actuator": "manual",
+   "bbox": [
+    0.484,
+    0.442,
+    0.49,
+    0.454
+   ],
+   "confidence": 0.8,
+   "notes": "On standby-air branch into pre-aeration air line"
+  },
+  {
+   "id": "PSV2",
+   "kind": "relief_valve",
+   "bbox": [
+    0.374,
+    0.601,
+    0.389,
+    0.632
+   ],
+   "confidence": 0.8,
+   "notes": "Untagged angle valve with spring, arrow discharging to the side, on blower discharge inside enclosure"
+  },
+  {
+   "id": "CV2",
+   "kind": "check_valve",
+   "bbox": [
+    0.399,
+    0.625,
+    0.406,
+    0.638
+   ],
+   "confidence": 0.85
+  },
+  {
+   "id": "BFV3",
+   "kind": "butterfly_valve",
+   "actuator": "manual",
+   "bbox": [
+    0.426,
+    0.627,
+    0.432,
+    0.638
+   ],
+   "confidence": 0.8
+  },
+  {
+   "id": "RED2",
+   "kind": "reducer",
+   "bbox": [
+    0.51,
+    0.627,
+    0.516,
+    0.638
+   ],
+   "confidence": 0.8,
+   "notes": "Small end towards blower; located downstream of the standby tee (unlike RED1)"
+  },
+  {
+   "id": "BFV4",
+   "kind": "butterfly_valve",
+   "actuator": "manual",
+   "bbox": [
+    0.484,
+    0.657,
+    0.49,
+    0.669
+   ],
+   "confidence": 0.8,
+   "notes": "On standby-air branch into MBR air line"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "VFD-100101",
+   "tag": "VFD-100101",
+   "name": "Variable frequency drive",
+   "location": "behind_panel",
+   "bbox": [
+    0.097,
+    0.381,
+    0.111,
+    0.404
+   ],
+   "confidence": 0.85,
+   "notes": "Bubble with dashed centre line inside blower control panel box; solid line down to blower; dashed line up to CB 480V at MDP-2"
+  },
+  {
+   "id": "OIT-100101",
+   "function": "OIT",
+   "name": "OIT",
+   "location": "local_panel",
+   "bbox": [
+    0.118,
+    0.381,
+    0.132,
+    0.404
+   ],
+   "confidence": 0.8,
+   "notes": "Untagged square box labelled OIT in blower control panel, on the data-link bus"
+  },
+  {
+   "id": "YI-100101A",
+   "tag": "YI-100101A",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.139,
+    0.381,
+    0.154,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'READY' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-100101B",
+   "tag": "YI-100101B",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.16,
+    0.381,
+    0.175,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'RUNNING' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-100101C",
+   "tag": "YI-100101C",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.182,
+    0.381,
+    0.196,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'LOADED' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-100101D",
+   "tag": "YI-100101D",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.203,
+    0.381,
+    0.217,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'POWER' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YA-100101A",
+   "tag": "YA-100101A",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.224,
+    0.381,
+    0.238,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'ALARM' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YA-100101B",
+   "tag": "YA-100101B",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.245,
+    0.381,
+    0.26,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'ERROR' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "XC-100101A",
+   "tag": "XC-100101A",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.266,
+    0.381,
+    0.281,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'START' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "XC-100101B",
+   "tag": "XC-100101B",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.288,
+    0.381,
+    0.302,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'STOP' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "XC-100101C",
+   "tag": "XC-100101C",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.309,
+    0.381,
+    0.323,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'LOAD' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "SC-100101",
+   "tag": "SC-100101",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.33,
+    0.381,
+    0.344,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'CURRENT' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "FI-100101",
+   "tag": "FI-100101",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-100101"
+   },
+   "bbox": [
+    0.351,
+    0.381,
+    0.366,
+    0.404
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'FLOW' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "VFD-090101",
+   "tag": "VFD-090101",
+   "name": "Variable frequency drive",
+   "location": "behind_panel",
+   "bbox": [
+    0.097,
+    0.595,
+    0.111,
+    0.617
+   ],
+   "confidence": 0.85,
+   "notes": "Bubble with dashed centre line inside blower control panel box; solid line down to blower; dashed line up to CB 480V at MDP-2 (drawn only for BLR-100101; on this blower the line ends at a break symbol)"
+  },
+  {
+   "id": "OIT-090101",
+   "function": "OIT",
+   "name": "OIT",
+   "location": "local_panel",
+   "bbox": [
+    0.118,
+    0.595,
+    0.132,
+    0.617
+   ],
+   "confidence": 0.8,
+   "notes": "Untagged square box labelled OIT in blower control panel, on the data-link bus"
+  },
+  {
+   "id": "YI-090101A",
+   "tag": "YI-090101A",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.139,
+    0.595,
+    0.154,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'READY' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-090101B",
+   "tag": "YI-090101B",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.16,
+    0.595,
+    0.175,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'RUNNING' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-090101C",
+   "tag": "YI-090101C",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.182,
+    0.595,
+    0.196,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'LOADED' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-090101D",
+   "tag": "YI-090101D",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.203,
+    0.595,
+    0.217,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'POWER' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YA-090101A",
+   "tag": "YA-090101A",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.224,
+    0.595,
+    0.238,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'ALARM' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YA-090101B",
+   "tag": "YA-090101B",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.245,
+    0.595,
+    0.26,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'ERROR' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "XC-090101A",
+   "tag": "XC-090101A",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.266,
+    0.595,
+    0.281,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'START' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "XC-090101B",
+   "tag": "XC-090101B",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.288,
+    0.595,
+    0.302,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'STOP' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "XC-090101C",
+   "tag": "XC-090101C",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.309,
+    0.595,
+    0.323,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'LOAD' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "SC-090101",
+   "tag": "SC-090101",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.33,
+    0.595,
+    0.344,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'CURRENT' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "FI-090101",
+   "tag": "FI-090101",
+   "location": "behind_panel",
+   "measures": {
+    "item": "BLR-090101"
+   },
+   "bbox": [
+    0.351,
+    0.595,
+    0.366,
+    0.617
+   ],
+   "confidence": 0.9,
+   "notes": "Blower control panel signal (same column as SCADA 'FLOW' for BLR-100101); association with blower is by enclosure, no individual process tap drawn"
+  },
+  {
+   "id": "YI-100101A-HMI",
+   "tag": "YI-100101A",
+   "name": "READY",
+   "location": "scada",
+   "bbox": [
+    0.139,
+    0.195,
+    0.154,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DI-YI-100101A",
+   "function": "DI",
+   "name": "PLC DI",
+   "location": "plc",
+   "bbox": [
+    0.139,
+    0.25,
+    0.154,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DI in MBR PLC band"
+  },
+  {
+   "id": "YI-100101B-HMI",
+   "tag": "YI-100101B",
+   "name": "RUNNING",
+   "location": "scada",
+   "bbox": [
+    0.16,
+    0.195,
+    0.175,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DI-YI-100101B",
+   "function": "DI",
+   "name": "PLC DI",
+   "location": "plc",
+   "bbox": [
+    0.16,
+    0.25,
+    0.175,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DI in MBR PLC band"
+  },
+  {
+   "id": "YI-100101C-HMI",
+   "tag": "YI-100101C",
+   "name": "LOADED",
+   "location": "scada",
+   "bbox": [
+    0.182,
+    0.195,
+    0.196,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DI-YI-100101C",
+   "function": "DI",
+   "name": "PLC DI",
+   "location": "plc",
+   "bbox": [
+    0.182,
+    0.25,
+    0.196,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DI in MBR PLC band"
+  },
+  {
+   "id": "YI-100101D-HMI",
+   "tag": "YI-100101D",
+   "name": "POWER",
+   "location": "scada",
+   "bbox": [
+    0.203,
+    0.195,
+    0.217,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DI-YI-100101D",
+   "function": "DI",
+   "name": "PLC DI",
+   "location": "plc",
+   "bbox": [
+    0.203,
+    0.25,
+    0.217,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DI in MBR PLC band"
+  },
+  {
+   "id": "YA-100101A-HMI",
+   "tag": "YA-100101A",
+   "name": "ALARM",
+   "location": "scada",
+   "bbox": [
+    0.224,
+    0.195,
+    0.238,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DI-YA-100101A",
+   "function": "DI",
+   "name": "PLC DI",
+   "location": "plc",
+   "bbox": [
+    0.224,
+    0.25,
+    0.238,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DI in MBR PLC band"
+  },
+  {
+   "id": "YA-100101B-HMI",
+   "tag": "YA-100101B",
+   "name": "ERROR",
+   "location": "scada",
+   "bbox": [
+    0.245,
+    0.195,
+    0.26,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DI-YA-100101B",
+   "function": "DI",
+   "name": "PLC DI",
+   "location": "plc",
+   "bbox": [
+    0.245,
+    0.25,
+    0.26,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DI in MBR PLC band"
+  },
+  {
+   "id": "XC-100101A-HMI",
+   "tag": "XC-100101A",
+   "name": "START",
+   "location": "scada",
+   "bbox": [
+    0.266,
+    0.195,
+    0.281,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DO-XC-100101A",
+   "function": "DO",
+   "name": "PLC DO",
+   "location": "plc",
+   "bbox": [
+    0.266,
+    0.25,
+    0.281,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DO in MBR PLC band"
+  },
+  {
+   "id": "XC-100101B-HMI",
+   "tag": "XC-100101B",
+   "name": "STOP",
+   "location": "scada",
+   "bbox": [
+    0.288,
+    0.195,
+    0.302,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DO-XC-100101B",
+   "function": "DO",
+   "name": "PLC DO",
+   "location": "plc",
+   "bbox": [
+    0.288,
+    0.25,
+    0.302,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DO in MBR PLC band"
+  },
+  {
+   "id": "XC-100101C-HMI",
+   "tag": "XC-100101C",
+   "name": "LOAD",
+   "location": "scada",
+   "bbox": [
+    0.309,
+    0.195,
+    0.323,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band; suffix letter printed below the number"
+  },
+  {
+   "id": "PLC-DO-XC-100101C",
+   "function": "DO",
+   "name": "PLC DO",
+   "location": "plc",
+   "bbox": [
+    0.309,
+    0.25,
+    0.323,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled DO in MBR PLC band"
+  },
+  {
+   "id": "SC-100101-HMI",
+   "tag": "SC-100101",
+   "name": "CURRENT",
+   "location": "scada",
+   "bbox": [
+    0.33,
+    0.195,
+    0.344,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band"
+  },
+  {
+   "id": "PLC-AO-SC-100101",
+   "function": "AO",
+   "name": "PLC AO",
+   "location": "plc",
+   "bbox": [
+    0.33,
+    0.25,
+    0.344,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled AO in MBR PLC band"
+  },
+  {
+   "id": "FI-100101-HMI",
+   "tag": "FI-100101",
+   "name": "FLOW",
+   "location": "scada",
+   "bbox": [
+    0.351,
+    0.195,
+    0.366,
+    0.217
+   ],
+   "confidence": 0.9,
+   "notes": "Circle-in-square in SCADA HMI band"
+  },
+  {
+   "id": "PLC-AI-FI-100101",
+   "function": "AI",
+   "name": "PLC AI",
+   "location": "plc",
+   "bbox": [
+    0.351,
+    0.25,
+    0.366,
+    0.272
+   ],
+   "confidence": 0.85,
+   "notes": "Untagged diamond-in-square labelled AI in MBR PLC band"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "service": "air",
+   "from": "FLT1",
+   "to": "BLR-100101",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "Blower inlet from hatched filter elements"
+  },
+  {
+   "id": "L2",
+   "service": "process air",
+   "from": "BLR-100101",
+   "to": "OPC-a",
+   "path": [
+    "CV1",
+    "BFV1",
+    "RED1"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9,
+   "notes": "Thin dashed line; no line number or size printed. CV1 is inside the sound enclosure, BFV1 and RED1 outside."
+  },
+  {
+   "id": "L3",
+   "service": "process air",
+   "from": {
+    "line": "L2"
+   },
+   "to": "PSV1",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.75,
+   "notes": "Relief tap upstream of CV1"
+  },
+  {
+   "id": "L4",
+   "service": "process air",
+   "from": "OPC-B",
+   "to": {
+    "line": "L2",
+    "after": "RED1"
+   },
+   "path": [
+    "BFV2"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.8,
+   "notes": "Standby blower air header; runs up the sheet, crosses the MBR air line with a hop (no connection), short capped stub at top of the vertical run"
+  },
+  {
+   "id": "L5",
+   "service": "process air",
+   "from": {
+    "line": "L4"
+   },
+   "to": {
+    "line": "L6",
+    "after": "BFV3"
+   },
+   "path": [
+    "BFV4"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.8,
+   "notes": "Standby air branch to MBR air line, tees in between BFV3 and RED2"
+  },
+  {
+   "id": "L6",
+   "service": "process air",
+   "from": "BLR-090101",
+   "to": "OPC-C",
+   "path": [
+    "CV2",
+    "BFV3",
+    "RED2"
+   ],
+   "flow_direction": "shown",
+   "confidence": 0.9,
+   "notes": "Thin dashed line; no line number or size printed."
+  },
+  {
+   "id": "L7",
+   "service": "process air",
+   "from": {
+    "line": "L6"
+   },
+   "to": "PSV2",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.75,
+   "notes": "Relief tap upstream of CV2"
+  },
+  {
+   "id": "L8",
+   "service": "air",
+   "from": "FLT2",
+   "to": "BLR-090101",
+   "path": [],
+   "flow_direction": "inferred",
+   "confidence": 0.6,
+   "notes": "Blower inlet from hatched filter elements"
+  }
+ ],
+ "signals": [
+  {
+   "from": "VFD-100101",
+   "to": "BLR-100101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8,
+   "notes": "VFD drives blower motor (solid connecting line drawn)"
+  },
+  {
+   "from": "VFD-090101",
+   "to": "BLR-090101",
+   "type": "electrical",
+   "purpose": "control",
+   "confidence": 0.8,
+   "notes": "VFD drives blower motor (solid connecting line drawn)"
+  },
+  {
+   "from": "YI-100101A",
+   "to": "PLC-DI-YI-100101A",
+   "type": "software",
+   "purpose": "status",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-DI-YI-100101A",
+   "to": "YI-100101A-HMI",
+   "type": "software",
+   "purpose": "status"
+  },
+  {
+   "from": "YI-100101B",
+   "to": "PLC-DI-YI-100101B",
+   "type": "software",
+   "purpose": "status",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-DI-YI-100101B",
+   "to": "YI-100101B-HMI",
+   "type": "software",
+   "purpose": "status"
+  },
+  {
+   "from": "YI-100101C",
+   "to": "PLC-DI-YI-100101C",
+   "type": "software",
+   "purpose": "status",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-DI-YI-100101C",
+   "to": "YI-100101C-HMI",
+   "type": "software",
+   "purpose": "status"
+  },
+  {
+   "from": "YI-100101D",
+   "to": "PLC-DI-YI-100101D",
+   "type": "software",
+   "purpose": "status",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-DI-YI-100101D",
+   "to": "YI-100101D-HMI",
+   "type": "software",
+   "purpose": "status"
+  },
+  {
+   "from": "YA-100101A",
+   "to": "PLC-DI-YA-100101A",
+   "type": "software",
+   "purpose": "alarm",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-DI-YA-100101A",
+   "to": "YA-100101A-HMI",
+   "type": "software",
+   "purpose": "alarm"
+  },
+  {
+   "from": "YA-100101B",
+   "to": "PLC-DI-YA-100101B",
+   "type": "software",
+   "purpose": "alarm",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-DI-YA-100101B",
+   "to": "YA-100101B-HMI",
+   "type": "software",
+   "purpose": "alarm"
+  },
+  {
+   "from": "XC-100101A-HMI",
+   "to": "PLC-DO-XC-100101A",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "PLC-DO-XC-100101A",
+   "to": "XC-100101A",
+   "type": "software",
+   "purpose": "control",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "XC-100101B-HMI",
+   "to": "PLC-DO-XC-100101B",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "PLC-DO-XC-100101B",
+   "to": "XC-100101B",
+   "type": "software",
+   "purpose": "control",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "XC-100101C-HMI",
+   "to": "PLC-DO-XC-100101C",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "PLC-DO-XC-100101C",
+   "to": "XC-100101C",
+   "type": "software",
+   "purpose": "control",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "SC-100101-HMI",
+   "to": "PLC-AO-SC-100101",
+   "type": "software",
+   "purpose": "control"
+  },
+  {
+   "from": "PLC-AO-SC-100101",
+   "to": "SC-100101",
+   "type": "software",
+   "purpose": "control",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "FI-100101",
+   "to": "PLC-AI-FI-100101",
+   "type": "software",
+   "purpose": "measurement",
+   "notes": "via shared data-link bus (line with small circles) between blower panel and MBR PLC"
+  },
+  {
+   "from": "PLC-AI-FI-100101",
+   "to": "FI-100101-HMI",
+   "type": "software",
+   "purpose": "measurement"
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC-a",
+   "tag": "a",
+   "direction": "out",
+   "name": "PROCESS AIR TO PA-01 REF SHT P-202",
+   "other_drawing": "P-202",
+   "other_item": "PA-01",
+   "bbox": [
+    0.812,
+    0.407,
+    0.876,
+    0.43
+   ],
+   "confidence": 0.9,
+   "notes": "Connector letter is drawn as a lower-case 'a' (others are upper case)"
+  },
+  {
+   "id": "OPC-B",
+   "tag": "B",
+   "direction": "in",
+   "name": "PROCESS AIR FROM STD-BY BLR. REF SHT P-209",
+   "other_drawing": "P-209",
+   "bbox": [
+    0.058,
+    0.805,
+    0.122,
+    0.827
+   ],
+   "confidence": 0.9
+  },
+  {
+   "id": "OPC-C",
+   "tag": "C",
+   "direction": "out",
+   "name": "PROCESS AIR TO MB-01 REF SHT P-203",
+   "other_drawing": "P-203",
+   "other_item": "MB-01",
+   "bbox": [
+    0.812,
+    0.621,
+    0.876,
+    0.644
+   ],
+   "confidence": 0.9
+  }
+ ],
+ "boundaries": [],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": []
+}

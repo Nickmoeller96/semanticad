@@ -1,0 +1,563 @@
+{
+ "schema_version": "1.0",
+ "page": 21,
+ "sheet": {
+  "drawing_number": "P-401",
+  "title": "P&IDS IRRIGATION EQUALIZATION TANK P&ID",
+  "revision": null,
+  "drawing_type": "pid",
+  "rotation": 0,
+  "issue_status": "DESIGN/BUILD DOCUMENTS - prepared for submission to EPA in July 2021 to provide a general understanding of the project concept; not intended to reflect design requirements",
+  "legend_notes": [
+   "Sheet 21 of 25. CAD filename P-401.DWG. Revision table is blank.",
+   "Two horizontal dash-dot lines divide the sheet into bands. Only the upper line is labelled (SCADA): trapezoid symbols above it are SCADA points. The band between the two lines carries no label; LI 401, LAH 402 (circle-in-square) and LI 402 (circle with solid bar) sit in it. Items below the lower line are field.",
+   "Arrowheads into/out of SCADA and panel symbols are drawn either open or filled (apparently discrete vs analog); no legend on this sheet.",
+   "A diamond marked 'I' (interlock) sits on the data-link bus; it carries no tag and no output to any final element is drawn on this sheet.",
+   "No line numbers, pipe sizes, valves or equipment tags are printed on this sheet. Equipment is labelled only CONTACT BASIN and TANK.",
+   "Flag 'HYPOCHLORITE SOLUTION' carries no 'REF SHT' drawing reference; recorded as a boundary."
+  ]
+ },
+ "equipment": [
+  {
+   "id": "CONTACT_BASIN",
+   "kind": "tank",
+   "name": "CONTACT BASIN",
+   "bbox": [
+    0.222,
+    0.755,
+    0.268,
+    0.776
+   ],
+   "confidence": 0.8,
+   "notes": "No tag printed. Drawn as a rectangle with two internal baffle lines; kind 'tank' is the closest vocabulary term."
+  },
+  {
+   "id": "EQ_TANK",
+   "kind": "tank",
+   "name": "TANK",
+   "bbox": [
+    0.327,
+    0.622,
+    0.518,
+    0.85
+   ],
+   "confidence": 0.9,
+   "notes": "No tag printed; label below is just 'TANK'. Sheet title is IRRIGATION EQUALIZATION TANK and the SCADA point LAH 402 is labelled EQUALIZATION TANK HI LEVEL. Drawn with a sloped roof and a top hatch/vent; a water-level symbol is drawn inside."
+  }
+ ],
+ "components": [],
+ "instruments": [
+  {
+   "id": "LCH-001_HI",
+   "tag": "LCH 001",
+   "name": "HI LEVEL SP",
+   "location": "scada",
+   "bbox": [
+    0.241,
+    0.091,
+    0.259,
+    0.113
+   ],
+   "confidence": 0.95,
+   "notes": "Tag 'LCH 001' is printed on more than one SCADA symbol on this sheet; told apart by the label above."
+  },
+  {
+   "id": "LAH-001",
+   "tag": "LAH 001",
+   "name": "TANK LEVEL HI",
+   "location": "scada",
+   "bbox": [
+    0.263,
+    0.091,
+    0.281,
+    0.113
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "LCL-001_LO",
+   "tag": "LCL 001",
+   "name": "LO LEVEL SP",
+   "location": "scada",
+   "bbox": [
+    0.285,
+    0.091,
+    0.303,
+    0.113
+   ],
+   "confidence": 0.95,
+   "notes": "Tag 'LCL 001' is printed on more than one SCADA symbol on this sheet; told apart by the label above."
+  },
+  {
+   "id": "LAL-001",
+   "tag": "LAL 001",
+   "name": "TANK LEVEL LOW",
+   "location": "scada",
+   "bbox": [
+    0.307,
+    0.091,
+    0.325,
+    0.113
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "YA-001",
+   "tag": "YA 001",
+   "name": "XMTR FAULT",
+   "location": "scada",
+   "bbox": [
+    0.329,
+    0.091,
+    0.347,
+    0.113
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "LI-001",
+   "tag": "LI 001",
+   "name": "TANK LEVEL",
+   "location": "scada",
+   "bbox": [
+    0.351,
+    0.091,
+    0.369,
+    0.113
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "LCH-001_LEAD",
+   "tag": "LCH 001",
+   "name": "LEAD START SP",
+   "location": "scada",
+   "bbox": [
+    0.374,
+    0.091,
+    0.392,
+    0.113
+   ],
+   "confidence": 0.95,
+   "notes": "Tag 'LCH 001' is printed on more than one SCADA symbol on this sheet; told apart by the label above."
+  },
+  {
+   "id": "LCL-001_LAG",
+   "tag": "LCL 001",
+   "name": "LAG START SP",
+   "location": "scada",
+   "bbox": [
+    0.396,
+    0.091,
+    0.414,
+    0.113
+   ],
+   "confidence": 0.95,
+   "notes": "Tag 'LCL 001' is printed on more than one SCADA symbol on this sheet; told apart by the label above."
+  },
+  {
+   "id": "LCL-001_STOP",
+   "tag": "LCL 001",
+   "name": "ALL STOP SP",
+   "location": "scada",
+   "bbox": [
+    0.418,
+    0.091,
+    0.436,
+    0.113
+   ],
+   "confidence": 0.95,
+   "notes": "Tag 'LCL 001' is printed on more than one SCADA symbol on this sheet; told apart by the label above."
+  },
+  {
+   "id": "LAH-402_SCADA",
+   "tag": "LAH 402",
+   "name": "EQUALIZATION TANK HI LEVEL",
+   "location": "scada",
+   "bbox": [
+    0.454,
+    0.091,
+    0.472,
+    0.113
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "FIR-403",
+   "tag": "FIR 403",
+   "name": "FLOW",
+   "location": "scada",
+   "bbox": [
+    0.643,
+    0.091,
+    0.661,
+    0.113
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "I1",
+   "function": "I",
+   "name": "Interlock (diamond marked 'I', no tag)",
+   "location": "unknown",
+   "bbox": [
+    0.397,
+    0.181,
+    0.413,
+    0.201
+   ],
+   "confidence": 0.8,
+   "notes": "Plain diamond with the letter I, on the data-link bus just below the SCADA line. No tag, no interlock number and no output to equipment drawn on this sheet."
+  },
+  {
+   "id": "LI-401",
+   "tag": "LI 401",
+   "location": "dcs",
+   "bbox": [
+    0.352,
+    0.201,
+    0.368,
+    0.224
+   ],
+   "confidence": 0.95,
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the SCADA line and the lower dash-dot line.",
+   "attributes": {
+    "band": "unlabelled (below SCADA line)"
+   }
+  },
+  {
+   "id": "LAH-402_PNL",
+   "tag": "LAH 402",
+   "location": "dcs",
+   "bbox": [
+    0.455,
+    0.201,
+    0.471,
+    0.224
+   ],
+   "confidence": 0.95,
+   "notes": "Circle-in-square shared-display bubble in the unlabelled band between the SCADA line and the lower dash-dot line. Same tag as the SCADA trapezoid above it.",
+   "attributes": {
+    "band": "unlabelled (below SCADA line)"
+   }
+  },
+  {
+   "id": "LI-402",
+   "tag": "LI 402",
+   "location": "main_panel",
+   "bbox": [
+    0.353,
+    0.282,
+    0.368,
+    0.305
+   ],
+   "confidence": 0.85,
+   "notes": "Circle with a solid horizontal bar, in the unlabelled band, in series on the dashed line between LE 401 and LI 401. Printed number is 402 although it is in the LE 401 / LI 401 signal path; recorded as drawn.",
+   "attributes": {
+    "band": "unlabelled (below SCADA line)"
+   }
+  },
+  {
+   "id": "LE-401",
+   "tag": "LE 401",
+   "location": "field",
+   "measures": {
+    "item": "EQ_TANK"
+   },
+   "bbox": [
+    0.367,
+    0.772,
+    0.381,
+    0.794
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble with leader to a submerged probe symbol near the tank bottom."
+  },
+  {
+   "id": "LSH-402",
+   "tag": "LSH 402",
+   "location": "field",
+   "measures": {
+    "item": "EQ_TANK"
+   },
+   "bbox": [
+    0.455,
+    0.581,
+    0.471,
+    0.604
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble above the tank roof; thin solid line down into the tank to a float (teardrop) symbol."
+  },
+  {
+   "id": "FIT-403",
+   "tag": "FIT 403",
+   "location": "field",
+   "bbox": [
+    0.644,
+    0.681,
+    0.659,
+    0.704
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble stacked directly on FE 403."
+  },
+  {
+   "id": "FE-403",
+   "tag": "FE 403",
+   "location": "field",
+   "bbox": [
+    0.644,
+    0.704,
+    0.659,
+    0.727
+   ],
+   "confidence": 0.95,
+   "notes": "Bubble joined by a thin solid line to a small square marked 'M' in-line on the tank outlet pipe (magnetic flowmeter symbol). A second label 'FE-' with no number is printed below the square."
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1",
+   "from": "OPC1",
+   "to": "CONTACT_BASIN",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.95
+  },
+  {
+   "id": "L2",
+   "from": "B1",
+   "to": {
+    "line": "L1"
+   },
+   "path": [],
+   "flow_direction": "shown",
+   "service": "HYPOCHLORITE SOLUTION",
+   "confidence": 0.95,
+   "notes": "Runs right then up, arrowhead into L1 upstream of the contact basin."
+  },
+  {
+   "id": "L3",
+   "from": "CONTACT_BASIN",
+   "to": "EQ_TANK",
+   "path": [],
+   "flow_direction": "shown",
+   "confidence": 0.95
+  },
+  {
+   "id": "L4",
+   "from": "EQ_TANK",
+   "to": "OPC2",
+   "path": [
+    "FE-403"
+   ],
+   "flow_direction": "inferred",
+   "confidence": 0.9,
+   "notes": "No arrowhead on this run; direction from the flag text 'TO EFFLUENT DISPOSAL'."
+  }
+ ],
+ "signals": [
+  {
+   "from": "LE-401",
+   "to": "LI-402",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed line from the top of the probe symbol up through the tank roof to LI 402."
+  },
+  {
+   "from": "LI-402",
+   "to": "LI-401",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed, filled arrowhead into LI 401."
+  },
+  {
+   "from": "LI-401",
+   "to": "LI-001",
+   "type": "software",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Data link straight up from LI 401, filled arrowhead into LI 001."
+  },
+  {
+   "from": "LI-401",
+   "to": "LAH-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Common data-link bus (line with small circles) at the level of the I diamond; the bus joins the LI 401 riser, the five SCADA drops, the I diamond and the LAH 402 riser. Open arrowhead into LAH 001."
+  },
+  {
+   "from": "LI-401",
+   "to": "LAL-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Common data-link bus (line with small circles) at the level of the I diamond; the bus joins the LI 401 riser, the five SCADA drops, the I diamond and the LAH 402 riser. Open arrowhead into LAL 001."
+  },
+  {
+   "from": "LI-401",
+   "to": "YA-001",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.8,
+   "notes": "Common data-link bus (line with small circles) at the level of the I diamond; the bus joins the LI 401 riser, the five SCADA drops, the I diamond and the LAH 402 riser. Open arrowhead into YA 001 (XMTR FAULT)."
+  },
+  {
+   "from": "LCH-001_HI",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.7,
+   "notes": "Common data-link bus (line with small circles) at the level of the I diamond; the bus joins the LI 401 riser, the five SCADA drops, the I diamond and the LAH 402 riser. Filled arrowhead points down, away from the SCADA symbol (setpoint); destination on the bus taken as LI 401."
+  },
+  {
+   "from": "LCL-001_LO",
+   "to": "LI-401",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.7,
+   "notes": "Common data-link bus (line with small circles) at the level of the I diamond; the bus joins the LI 401 riser, the five SCADA drops, the I diamond and the LAH 402 riser. Filled arrowhead points down, away from the SCADA symbol (setpoint); destination on the bus taken as LI 401."
+  },
+  {
+   "from": "LI-401",
+   "to": "I1",
+   "type": "software",
+   "purpose": "unknown",
+   "confidence": 0.7,
+   "notes": "Bus enters the left corner of the I diamond; no arrowhead, direction inferred."
+  },
+  {
+   "from": "LCH-001_LEAD",
+   "to": "I1",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "LEAD START SP, LAG START SP and ALL STOP SP data links join and drop into the top corner of the I diamond; filled arrowheads point away from the SCADA symbols."
+  },
+  {
+   "from": "LCL-001_LAG",
+   "to": "I1",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "See LEAD START SP."
+  },
+  {
+   "from": "LCL-001_STOP",
+   "to": "I1",
+   "type": "software",
+   "purpose": "control",
+   "confidence": 0.85,
+   "notes": "See LEAD START SP."
+  },
+  {
+   "from": "LAH-402_PNL",
+   "to": "I1",
+   "type": "software",
+   "purpose": "unknown",
+   "confidence": 0.6,
+   "notes": "Bus leaves the right corner of the I diamond and joins the LAH 402 riser between the panel bubble and the SCADA symbol; no arrowhead, direction inferred."
+  },
+  {
+   "from": "LSH-402",
+   "to": "LAH-402_PNL",
+   "type": "electrical",
+   "purpose": "alarm",
+   "confidence": 0.9,
+   "notes": "Dashed, open arrowhead into LAH 402."
+  },
+  {
+   "from": "LAH-402_PNL",
+   "to": "LAH-402_SCADA",
+   "type": "software",
+   "purpose": "alarm",
+   "confidence": 0.9,
+   "notes": "Data link up, open arrowhead into the SCADA symbol."
+  },
+  {
+   "from": "FE-403",
+   "to": "FIT-403",
+   "type": "unknown",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Bubbles touch; no signal line drawn between them."
+  },
+  {
+   "from": "FIT-403",
+   "to": "FIR-403",
+   "type": "electrical",
+   "purpose": "measurement",
+   "confidence": 0.9,
+   "notes": "Dashed line straight up through both band lines, open arrowhead into FIR 403; no intermediate panel bubble."
+  }
+ ],
+ "off_page_connectors": [
+  {
+   "id": "OPC1",
+   "direction": "in",
+   "name": "FROM PERMEATE COLLECTION / REF SHT P-204",
+   "other_drawing": "P-204",
+   "bbox": [
+    0.108,
+    0.753,
+    0.143,
+    0.769
+   ],
+   "confidence": 0.95
+  },
+  {
+   "id": "OPC2",
+   "direction": "out",
+   "name": "TO EFFLUENT DISPOSAL / REF SHT P-501",
+   "other_drawing": "P-501",
+   "bbox": [
+    0.745,
+    0.757,
+    0.781,
+    0.772
+   ],
+   "confidence": 0.95
+  }
+ ],
+ "boundaries": [
+  {
+   "id": "B1",
+   "name": "HYPOCHLORITE SOLUTION",
+   "direction": "source",
+   "bbox": [
+    0.108,
+    0.816,
+    0.143,
+    0.833
+   ],
+   "confidence": 0.9,
+   "notes": "Drawn with the same flag symbol as the off-page connectors but with no 'REF SHT' drawing number."
+  }
+ ],
+ "tiles_reviewed": [
+  "r1c1",
+  "r1c2",
+  "r1c3",
+  "r1c4",
+  "r2c1",
+  "r2c2",
+  "r2c3",
+  "r2c4",
+  "r3c1",
+  "r3c2",
+  "r3c3",
+  "r3c4"
+ ],
+ "unreadable": [
+  "Label 'FE-' below the in-line flowmeter square: number is blank as drawn (the bubble above reads FE 403).",
+  "Diamond 'I' (interlock): no tag or number, and its action/output is not drawn on this sheet.",
+  "Lower dash-dot band line carries no label, so the panel/PLC that LI 401, LAH 402 and LI 402 belong to is not stated.",
+  "Flag 'HYPOCHLORITE SOLUTION': no 'REF SHT' drawing number printed.",
+  "No tags for CONTACT BASIN or TANK; no line numbers or sizes printed.",
+  "Title block: revision, designed/drawn/checked/approved and client project number fields are blank."
+ ]
+}
